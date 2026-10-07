@@ -320,8 +320,11 @@ if (!robots.includes('User-agent: Googlebot')) {
 }
 
 const routes = JSON.parse(readFileSync(join(dist, '_routes.json'), 'utf8'))
-if (!routes.exclude?.includes('/sitemap.xml') || !routes.exclude?.includes('/robots.txt')) {
-  fail('_routes.json must exclude /sitemap.xml and /robots.txt from Functions')
+if (!routes.exclude?.includes('/robots.txt')) {
+  fail('_routes.json must exclude /robots.txt from Functions')
+}
+if (routes.exclude?.includes('/sitemap.xml')) {
+  fail('_routes.json must not exclude /sitemap.xml — Functions serve it as XML')
 }
 
 for (const asset of [
@@ -362,6 +365,9 @@ if (/^\/forums\/\s+\/forums\s+301/m.test(redirects) || /^\/forums\/:slug\/\s+\/f
 }
 
 const worker = readFileSync(join(root, 'workers', 'site.js'), 'utf8')
+if (!worker.includes('/sitemap.xml')) {
+  fail('workers/site.js must serve /sitemap.xml with an XML content type')
+}
 if (!worker.includes("startsWith('www.')") && !worker.includes('startsWith("www.")')) {
   fail('workers/site.js must detect www. hostnames for apex redirect')
 }
@@ -396,7 +402,7 @@ if (!headers.includes('Content-Type: text/html; charset=utf-8')) {
 if (!headers.includes('/sitemap.xml')) {
   fail('_headers missing /sitemap.xml Content-Type')
 }
-if (!headers.includes('text/xml; charset=utf-8')) {
+if (!headers.includes('application/xml; charset=utf-8') && !headers.includes('text/xml; charset=utf-8')) {
   fail('_headers missing XML charset Content-Type')
 }
 

@@ -45,6 +45,36 @@ function toApexUrl(url) {
   return next
 }
 
+function isXmlCrawler(request) {
+  const ua = request.headers.get('user-agent') || ''
+  return /googlebot|google-inspectiontool|bingbot|slurp|duckduckbot|yandex|baiduspider|facebookexternalhit|twitterbot|linkedinbot|applebot/i.test(
+    ua,
+  )
+}
+
+async function serveSitemap(env, request) {
+  const asset = await assetsFetch(env, request, '/sitemap.xml')
+  let body = await asset.text()
+  if (!asset.ok || !body.includes('<urlset')) {
+    return new Response('Sitemap unavailable', { status: 500, headers: { 'content-type': 'text/plain; charset=utf-8' } })
+  }
+  if (!isXmlCrawler(request) && !body.includes('xml-stylesheet')) {
+    body = body.replace(
+      '<?xml version="1.0" encoding="UTF-8"?>',
+      '<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/css" href="/sitemap.css"?>',
+    )
+  }
+  return new Response(body, {
+    status: 200,
+    headers: {
+      'content-type': 'application/xml; charset=utf-8',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'public, max-age=3600',
+      'access-control-allow-origin': '*',
+    },
+  })
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url)
@@ -58,6 +88,10 @@ export default {
     const apex = toApexUrl(url)
     if (apex) {
       return Response.redirect(apex.toString(), 301)
+    }
+
+    if (url.pathname === '/sitemap.xml') {
+      return serveSitemap(env, request)
     }
 
     const assetResponse = await assetsFetch(env, request, url.pathname + url.search)

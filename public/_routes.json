@@ -2,7 +2,6 @@
   "version": 1,
   "include": ["/*"],
   "exclude": [
-    "/sitemap.xml",
     "/sitemap.css",
     "/robots.txt",
     "/favicon.ico",

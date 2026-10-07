@@ -1,5 +1,4 @@
 /
-  Content-Type: text/html; charset=utf-8
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
@@ -46,7 +45,7 @@
   Cache-Control: public, max-age=604800
 
 /sitemap.xml
-  Content-Type: text/xml; charset=utf-8
+  Content-Type: application/xml; charset=utf-8
   Cache-Control: public, max-age=3600
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
