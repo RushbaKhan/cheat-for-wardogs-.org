@@ -1,0 +1,89 @@
+# Cloudflare Pages redirects (static files always win over these rules).
+# Host www/HTTP → HTTPS apex is handled in the Cloudflare dashboard (and workers/site.js).
+#
+# Do NOT strip trailing slashes on real pages here. Pages treats directory HTML
+# (`forums/index.html`) as `/forums/` and 308s `/forums` → `/forums/`. A 301 back
+# to the no-slash URL causes ERR_TOO_MANY_REDIRECTS.
+
+# Product / policy aliases
+/wardogs-hacks  /wardogs-cheats   301
+/wardogs-hacks/ /wardogs-cheats   301
+/refund/        /refunds       301
+/refund-policy  /refunds       301
+/refund-policy/ /refunds       301
+/privacy-policy /privacy       301
+/privacy-policy/ /privacy      301
+/terms-of-use   /terms         301
+/terms-of-use/  /terms         301
+/terms-of-service /terms       301
+/terms-of-service/ /terms      301
+
+# Primary keyword variants
+/wardogs-cheat   /wardogs-cheats   301
+/wardogs-cheat/  /wardogs-cheats   301
+/buy-wardogs-cheats   /   301
+/buy-wardogs-cheats/  /   301
+/guides         /forums        301
+/guides/        /forums        301
+/setup          /forums/wardogs-cheats 301
+/features-list  /forums/wardogs-cheats-review  301
+
+# Long-tail keyword aliases
+/wardogs-anti-cheat   /forums/wardogs-anti-cheat  301
+/wardogs-anti-cheat/  /forums/wardogs-anti-cheat  301
+/wardogs-discord                             /support  301
+/wardogs-discord/                            /support  301
+/wardogs-pc                                  /wardogs-cheats  301
+/wardogs-pc/                                 /wardogs-cheats  301
+
+# Forum short-slug aliases
+/forums/setup         /forums/wardogs-cheats 301
+/forums/features      /forums/wardogs-cheats-review 301
+/forums/aimbot        /forums/wardogs-aimbot 301
+/forums/esp           /forums/wardogs-esp 301
+/forums/dma           /forums/wardogs-dma 301
+/forums/recoil        /forums/wardogs-no-recoil 301
+/forums/radar         /forums/wardogs-2d-radar 301
+/forums/status        /forums 301
+/forums/loader        /forums/wardogs-cheats 301
+
+# Renamed forum posts
+/forums/wardogs-guide          /forums/wardogs-cheats 301
+/forums/wardogs-review         /forums/wardogs-cheats-review 301
+/forums/wardogs-pc-features    /forums/wardogs-2d-radar 301
+/forums/hwid-spoofer-guide            /forums/wardogs-hwid-spoofer 301
+/forums/enable-aimbot                 /forums/wardogs-aimbot 301
+/forums/what-hwid-spoofer-does           /forums/wardogs-hwid-spoofer 301
+/forums/what-does-an-hwid-spoofer-do     /forums/wardogs-hwid-spoofer 301
+/forums/features-list          /forums/wardogs-cheats-review 301
+/forums/complete-setup         /forums/wardogs-cheats 301
+/forums/aimbot-settings        /forums/wardogs-aimbot 301
+/forums/esp-wallhack-guide     /forums/wardogs-esp 301
+/forums/radar-hack-guide       /forums/wardogs-2d-radar 301
+/forums/windows-setup          /forums/wardogs-hwid-spoofer 301
+/forums/loader-errors          /forums/wardogs-cheats 301
+/forums/elytra-status          /forums/wardogs-anti-cheat 301
+
+# Legacy slugs → forums
+/articles       /forums        301
+/articles/      /forums        301
+/articles/*     /forums        301
+/blog/instructions       /forums/wardogs-cheats 301
+/blog/how-to-load        /forums/wardogs-cheats 301
+/forums/instructions     /forums/wardogs-cheats 301
+/forums/instructions/    /forums/wardogs-cheats 301
+/forums/how-to-load      /forums/wardogs-cheats 301
+/forums/how-to-load/     /forums/wardogs-cheats 301
+/blog/:slug/    /forums/:slug  301
+/blog/:slug     /forums/:slug  301
+
+# Legacy / alternate sitemap URLs → single canonical sitemap
+/sitemap-pages.xml     /sitemap.xml  301
+/sitemap-products.xml  /sitemap.xml  301
+/sitemap-forums.xml    /sitemap.xml  301
+/sitemap-images.xml    /sitemap.xml  301
+/sitemap-blogs.xml     /sitemap.xml  301
+/sitemap-regions.xml   /sitemap.xml  301
+/sitemap-index.xml     /sitemap.xml  301
+/sitemap_index.xml     /sitemap.xml  301
+/sitemap.xml/          /sitemap.xml  301
