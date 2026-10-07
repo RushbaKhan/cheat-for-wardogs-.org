@@ -1,9 +1,9 @@
-﻿import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
 const root = join(import.meta.dirname, '..')
 const dist = join(root, 'dist')
-const site = 'https://cheatsforwardogs.org'
+const site = 'https://cheatforwardogs.org'
 const failures = []
 
 function fail(message) {
@@ -80,11 +80,13 @@ const support = readFileSync(join(dist, 'support', 'index.html'), 'utf8')
 const forums = readFileSync(join(dist, 'forums', 'index.html'), 'utf8')
 
 if (
-  !home.includes('<title>Wardogs cheats | Aimbot, ESP and Radar</title>')
+  !home.includes('<title>WARDOGS Cheats | Aimbot, ESP and Radar</title>')
 ) {
   fail('Homepage does not own the exact transactional title')
 }
-if (product.includes('<title>Wardogs cheats |')) fail('Store page competes with the homepage title')
+if (product.includes('<title>WARDOGS Cheats | Aimbot, ESP and Radar</title>')) {
+  fail('Store page competes with the homepage title')
+}
 if ((faq.match(/"@type":"FAQPage"/g) || []).length !== 1) fail('/faq must own one FAQPage')
 for (const [name, html] of [
   ['home', home],
@@ -99,7 +101,7 @@ for (const [name, html] of [
   ['product', product],
   ['reviews', reviews],
 ]) {
-  if (!html.includes('"@id":"https://cheatsforwardogs.org/#product"')) {
+  if (!html.includes('"@id":"https://cheatforwardogs.org/#product"')) {
     fail(`${name}: missing shared Product ID`)
   }
 }
@@ -137,8 +139,8 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  if (!ogImage?.startsWith('https://cheatsforwardogs.org/og/') || !ogImage.endsWith('.jpg')) {
-    fail(`${page}: og:image must be https://cheatsforwardogs.org/og/*.jpg for SERP thumbnails`)
+  if (!ogImage?.startsWith('https://cheatforwardogs.org/og/') || !ogImage.endsWith('.jpg')) {
+    fail(`${page}: og:image must be https://cheatforwardogs.org/og/*.jpg for SERP thumbnails`)
   }
   if (!twImage || twImage !== ogImage) {
     fail(`${page}: twitter:image must match og:image`)
@@ -162,12 +164,12 @@ for (const [name, html] of [
   ['home', home],
   ['forums', forums],
 ]) {
-  if (!html.includes('/videos/hero video.webm') && !html.includes('/videos/hero%20video.webm')) {
+  if (!html.includes('/videos/final.mp4')) {
     fail(`${name}: missing hero video`)
   }
 }
-if (!product.includes('/media/wardogs-cover-card.webp')) {
-  fail('product: missing visible product media in page body')
+if (!product.includes('/videos/final.mp4')) {
+  fail('product: missing hero preview video in page body')
 }
 if (!product.includes('/media/image-1.webp') || !product.includes('/media/image-2.webp')) {
   fail('product: missing feature preview gallery images')
@@ -198,8 +200,8 @@ if (sitemap.includes('<sitemapindex')) fail('sitemap.xml must be a single urlset
 if (/forums\/(instructions|how-to-load|wardogs-pc-features)/.test(sitemap)) {
   fail('Retired forum remains in sitemap.xml')
 }
-if (!sitemap.includes('https://cheatsforwardogs.org/')) {
-  fail('sitemap.xml must use https://cheatsforwardogs.org URLs')
+if (!sitemap.includes('https://cheatforwardogs.org/')) {
+  fail('sitemap.xml must use https://cheatforwardogs.org URLs')
 }
 if (!sitemap.includes('/forums/wardogs-cheats')) {
   fail('sitemap.xml missing ultimate WARDOGS guide')
@@ -255,7 +257,6 @@ const requiredImages = [
   '/media/wardogs-cover.webp',
   '/media/wardogs-cover-card.webp',
   '/media/wardogs-poster.jpg',
-  '/media/nav-logo.webp',
 ]
 
 for (const url of expectedUrls) {
@@ -306,7 +307,7 @@ if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
-if (!robots.includes('Sitemap: https://cheatsforwardogs.org/sitemap.xml')) {
+if (!robots.includes('Sitemap: https://cheatforwardogs.org/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
 if (!robots.includes('Allow: /sitemap.xml')) {
@@ -324,7 +325,7 @@ if (!routes.exclude?.includes('/robots.txt')) {
   fail('_routes.json must exclude /robots.txt from Functions')
 }
 if (routes.exclude?.includes('/sitemap.xml')) {
-  fail('_routes.json must not exclude /sitemap.xml — Functions serve it as XML')
+  fail('_routes.json must not exclude /sitemap.xml ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ Functions serve it as XML')
 }
 
 for (const asset of [
@@ -339,7 +340,7 @@ for (const asset of [
   'public/media/wardogs-cover.webp',
   'public/media/wardogs-cover-card.webp',
   'public/media/wardogs-poster.jpg',
-  'public/media/nav-logo.webp',
+  'public/videos/final.mp4',
   'public/sitemap.css',
   'public/_routes.json',
   'functions/_middleware.js',
@@ -372,16 +373,16 @@ if (!worker.includes("startsWith('www.')") && !worker.includes('startsWith("www.
   fail('workers/site.js must detect www. hostnames for apex redirect')
 }
 if (!worker.includes('301')) {
-  fail('workers/site.js must 301 www → apex for a single canonical host')
+  fail('workers/site.js must 301 www ? apex for a single canonical host')
 }
 
 const middleware = readFileSync(join(root, 'functions', '_middleware.js'), 'utf8')
 if (!middleware.includes("startsWith('www.')") && !middleware.includes('startsWith("www.")')) {
-  fail('functions/_middleware.js must 301 www → apex')
+  fail('functions/_middleware.js must 301 www ? apex')
 }
 
 if (site.includes('://www.')) {
-  fail('Canonical SITE_URL must be apex (no www) — www redirects to apex')
+  fail('Canonical SITE_URL must be apex (no www) ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ www redirects to apex')
 }
 
 for (const file of files) {

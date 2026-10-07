@@ -1,42 +1,47 @@
-﻿import { PRODUCT_OG } from './images'
+import { PRODUCT_OG } from './images'
 import { PAGE_OG } from './og'
 
-export const SITE_URL = 'https://cheatsforwardogs.org'
-export const SITE_NAME = 'Wardogs cheats'
-export const SITE_SHORT_NAME = 'Wardogs cheats'
-export const SITE_HOST = 'cheatsforwardogs.org'
+export const SITE_URL = 'https://cheatforwardogs.org'
+export const SITE_NAME = 'Wardogs Cheats'
+export const SITE_SHORT_NAME = 'Wardogs Cheats'
+export const SITE_HOST = 'cheatforwardogs.org'
 export const GAME_NAME = 'WARDOGS'
 export const GAME_SLUG = 'wardogs'
-export const ANTI_CHEAT = 'Elytra'
+export const ANTI_CHEAT = 'Easy Anti-Cheat (EAC)'
 export const PRODUCT_PATH = '/wardogs-cheats'
 export const SUPPORT_DISCORD_URL = 'https://discord.gg/t6n2cUNkPT'
-/** Full-resolution mark for schema. Navbar uses BRAND_NAV_LOGO. */
+/** Full-resolution mark for schema. */
 export const BRAND_LOGO = '/favicon.png'
-/** 80×80 WebP from public/favicon.png — displayed at 20×20 in the navbar. */
-export const BRAND_NAV_LOGO = '/media/nav-logo.webp?v=6'
 /** Tab icons generated from public/favicon.png at build time. */
 export const BRAND_FAVICON = '/favicon-32.png?v=6'
 export const BRAND_FAVICON_16 = '/favicon-16.png?v=6'
 export const BRAND_APPLE_TOUCH_ICON = '/apple-touch-icon.png?v=6'
 
 /**
- * Sole purpose — used in schema + about copy.
+ * Sole purpose - used in schema + about copy.
  * Single-product site: WARDOGS cheats for Windows PC (worldwide).
- * Canonical host is apex https://cheatsforwardogs.org (www 301s to apex in the Worker).
+ * Canonical host is apex https://cheatforwardogs.org (www 301s to apex in the Worker).
  */
 export const SITE_PURPOSE =
-  'Buy Wardogs cheats for WARDOGS on Windows PC — aimbot, ESP, 2D radar, no recoil, and no spread with live Elytra status and instant digital delivery.'
+  'Buy Wardogs Cheats for WARDOGS on Windows PC - aimbot, aim assist, silent aim, triggerbot, player ESP, item ESP, and 2D/3D radar with live cheat status and instant digital delivery.'
 
 export const SITE_ABOUT = [
-  'Wardogs cheats',
+  'wardogs cheats',
   'wardogs cheat',
-  'wardogs esp',
+  'wardogs cheats pc',
   'wardogs aimbot',
-  'wardogs anti cheat',
-  'wardogs pc',
-  'wardogs discord',
-  'elytra anti cheat',
+  'wardogs esp',
   'wardogs radar',
+  'wardogs hacks',
+  'wardogs anti cheat',
+  'wardogs eac',
+  'wardogs triggerbot',
+  'wardogs silent aim',
+  'wardogs player esp',
+  'wardogs 2d radar',
+  'wardogs 3d radar',
+  'wardogs cheat status',
+  'buy wardogs cheats',
 ] as const
 
 export const PRODUCT_PLANS = [
@@ -70,124 +75,128 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'Wardogs cheats | Aimbot, ESP and Radar',
+    title: 'WARDOGS Cheats | Aimbot, ESP and Radar',
     description:
-      'Buy Wardogs cheats for WARDOGS on Windows PC. Aimbot, box ESP, 2D radar, no recoil, and live Elytra status. Monthly $35 or lifetime $150.',
+      'Buy WARDOGS cheats for Windows PC. Aimbot, aim assist, silent aim, ESP, class ESP, item ESP, and 2D/3D radar. Monthly $35 or lifetime $150.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
-    imageAlt: 'Wardogs cheats — aimbot, ESP and 2D radar for WARDOGS on PC',
+    imageAlt: 'WARDOGS Cheats - aimbot, ESP and radar for Windows PC',
     robots: INDEX_ROBOTS,
   },
   features: {
-    title: 'Wardogs Features | Wardogs cheats',
+    title: 'WARDOGS Cheats Features | Aimbot, ESP and Radar',
     description:
-      'Wardogs features for WARDOGS on PC — enable aimbot, FOV, box ESP, skeleton ESP, 2D radar, vehicle markers, no recoil, and no spread.',
+      'Explore WARDOGS cheats features including aimbot, aim assist, silent aim, triggerbot, player ESP, box ESP, skeleton ESP, health ESP, class ESP, item ESP, and 2D/3D radar on Windows PC.',
     path: PRODUCT_PATH,
     ogType: 'website',
     image: PAGE_OG.product,
-    imageAlt: 'Wardogs cheats feature list for aimbot, ESP and radar',
+    imageAlt: 'WARDOGS Cheats feature list for aimbot, ESP and radar',
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'Wardogs Intel | Wardogs cheats',
+    title: 'WARDOGS Cheats Intel | Guides, Features & Status',
     description:
-      'Wardogs intel hub for Wardogs cheats — ESP, aimbot, 2D radar, Windows setup, Elytra status, and Discord before you buy.',
+      'WARDOGS cheats intel hub covering aimbot, silent aim, player ESP, class ESP, item ESP, triggerbot, 2D/3D radar, Windows setup, anti-cheat updates, and cheat status.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'WARDOGS intel and setup guides for Wardogs cheats',
+    imageAlt: 'WARDOGS intel and setup guides for Wardogs Cheats',
     robots: INDEX_ROBOTS,
   },
   reviews: {
-    title: 'Wardogs cheats Reviews | Buyer Feedback',
+    title: 'WARDOGS Cheats Reviews | Buyer Feedback',
     description:
-      'Read Wardogs cheats reviews from buyers covering aimbot, ESP, 2D radar, no recoil, and Elytra status before you pick monthly or lifetime.',
+      'Read WARDOGS cheats reviews covering aimbot, player ESP, box ESP, skeleton ESP, item ESP, radar, and overall cheat features before choosing monthly or lifetime access.',
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
-    imageAlt: 'Buyer reviews for Wardogs cheats',
+    imageAlt: 'Buyer reviews for Wardogs Cheats',
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'Wardogs FAQ | Wardogs cheats',
+    title: 'WARDOGS Cheats FAQ | Aimbot, ESP, Radar & Pricing',
     description:
-      'FAQ for Wardogs cheats on Windows PC — $35 monthly and $150 lifetime, ESP, aimbot, radar, Elytra status, setup, and Discord support.',
+      'WARDOGS cheats FAQ for Windows PC covering $35 monthly and $150 lifetime access, aimbot, silent aim, ESP, triggerbot, item ESP, radar, setup, and support.',
     path: '/faq',
     ogType: 'website',
     image: PAGE_OG.faq,
-    imageAlt: 'WARDOGS FAQ for price, Elytra status, and setup',
+    imageAlt: 'WARDOGS FAQ for price, EAC status, and setup',
     robots: INDEX_ROBOTS,
   },
   support: {
-    title: 'Wardogs Support | Wardogs cheats',
+    title: 'WARDOGS Cheats Support | Setup & Assistance',
     description:
-      'Get support for Wardogs cheats on Discord — loader setup, delivery, menu config, and Elytra status help after you purchase.',
+      'Get support for WARDOGS cheats covering loader setup, delivery, menu configuration, feature settings, and anti-cheat status after purchase.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
-    imageAlt: 'Discord support for Wardogs cheats',
+    imageAlt: 'Support for Wardogs Cheats buyers',
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'Wardogs Store | Wardogs cheats',
+    title: 'WARDOGS Cheats Store | Monthly & Lifetime',
     description:
-      'Wardogs store for Wardogs cheats. Monthly access is $35 and lifetime is $150, with aimbot, ESP, radar, no recoil, and instant worldwide delivery.',
+      'WARDOGS cheats store for Windows PC. Get monthly access for $35 or lifetime access for $150 with aimbot, ESP, triggerbot, item ESP, and 2D/3D radar.',
     path: PRODUCT_PATH,
     ogType: 'product',
     image: PAGE_OG.product,
-    imageAlt: 'WARDOGS store checkout for aimbot, ESP and 2D radar',
+    imageAlt: 'WARDOGS Cheats store - aimbot, ESP and radar',
     robots: INDEX_ROBOTS,
   },
   status: {
-    title: 'Wardogs Status | Wardogs cheats',
+    title: 'WARDOGS Cheat Status | Anti-Cheat & Updates',
     description:
-      'Wardogs status for Elytra on Windows PC. Check clear or Updating labels after client patches before you load Wardogs cheats.',
+      'Check the latest WARDOGS cheat status before loading. Follow game and anti-cheat updates and verify compatibility before using your WARDOGS cheat.',
     path: PRODUCT_PATH,
     ogType: 'website',
     image: PAGE_OG.product,
-    imageAlt: 'Live Elytra status for Wardogs cheats',
+    imageAlt: 'Live WARDOGS cheat status and EAC compatibility',
     robots: INDEX_ROBOTS,
   },
   preview: {
-    title: 'Wardogs Preview | Wardogs cheats',
+    title: 'WARDOGS Cheats Preview | Aimbot, ESP & Radar',
     description:
-      'Wardogs preview of aimbot, box ESP, skeleton ESP, and 2D radar on Windows PC before you buy Wardogs cheats.',
+      'Preview WARDOGS cheats featuring aimbot, silent aim, player ESP, skeleton ESP, item ESP, and radar. See how the cheat menu and visual features work before checkout.',
     path: PRODUCT_PATH,
     ogType: 'website',
     image: PAGE_OG.product,
-    imageAlt: 'In-game preview for Wardogs cheats ESP and aimbot',
+    imageAlt: 'In-game preview for WARDOGS Cheats ESP and aimbot',
     robots: INDEX_ROBOTS,
   },
   setup: {
-    title: 'Wardogs Setup | Wardogs cheats',
+    title: 'WARDOGS Cheats Setup | Windows PC Guide',
     description:
-      'Wardogs setup for Windows PC — load order, Elytra status, antivirus exclusions, and Discord help after you buy Wardogs cheats.',
+      'Learn how WARDOGS cheats organize aimbot, ESP, triggerbot, item ESP, and radar features, plus the settings to review before loading on Windows PC.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'Windows setup guides for Wardogs cheats',
+    imageAlt: 'Windows setup guides for Wardogs Cheats',
     robots: INDEX_ROBOTS,
   },
 } as const satisfies Record<string, PageSeo>
 
 export const HOME_HEADINGS = {
-  h1: { lead: 'Wardogs cheats —', accent: 'Aimbot, ESP and Radar' },
-  h2Features: { lead: 'Wardogs', accent: 'Features' },
+  h1: { lead: 'WARDOGS Cheats |', accent: 'Aimbot, ESP and Radar' },
+  h2Features: { lead: 'WARDOGS', accent: 'Features' },
   h2Featured: { lead: 'WARDOGS', accent: 'ESP, aimbot and radar' },
-  h2WhyFeatures: { lead: 'Why These Features Matter in', accent: GAME_NAME },
-  h2Gameplay: { before: 'Wardogs ', accent: 'Cheats', after: ' Preview' },
-  h2SystemRequirements: {
-    before: 'Wardogs ',
-    accent: 'Cheats',
-    after: ' System Requirements',
+  h2WhyFeatures: {
+    lead: 'Why These WARDOGS Features',
+    accent: 'are Important',
   },
-  h2Forums: { lead: 'Wardogs', accent: 'Intel' },
-  h2About: { lead: 'Check Elytra status before you buy', accent: 'Wardogs cheats' },
-  h2Access: { lead: 'Buy', accent: 'Wardogs cheats' },
-  h2Store: { lead: 'Wardogs', accent: 'Store' },
-  h2Faq: { lead: 'Wardogs', accent: 'FAQ' },
+  h2Gameplay: { before: 'WARDOGS Cheats ', accent: 'Preview', after: '' },
+  h2SystemRequirements: {
+    before: '',
+    accent: 'System Requirements',
+    after: '',
+  },
+  h2Forums: { lead: 'WARDOGS Cheats', accent: 'Intel' },
+  h2About: { lead: 'WARDOGS on PC,', accent: 'live status labels' },
+  h2Access: { lead: 'Choose', accent: 'monthly or lifetime' },
+  h2Store: { lead: 'See pricing on the', accent: 'products page' },
 } as const
+
+export const HOME_FAQ_HEADING = 'FAQs' as const
 
 export function absoluteUrl(path: string) {
   if (!path || path === '/') return `${SITE_URL}/`

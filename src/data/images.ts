@@ -1,4 +1,4 @@
-import { WARDOGS_COVER_CARD, IMAGE_1, IMAGE_2 } from './media'
+import { WARDOGS_COVER_CARD, IMAGE_1, IMAGE_2, gameplayImagePath } from './media'
 import { PRODUCT_OG, getOgImageForPath, PAGE_OG } from './og'
 
 export { PRODUCT_OG, getOgImageForPath, PAGE_OG }
@@ -22,12 +22,13 @@ export const IMAGE_SEO: Record<
   }
 > = {
   wardogs: {
-    alt: 'Official WARDOGS cover art for Wardogs cheats on PC',
-    title: 'Wardogs cheats product details',
-    caption: 'Aimbot, ESP, 2D radar, no recoil, and no spread for WARDOGS with Elytra status',
-    heroAlt: 'Wardogs cheats aimbot, ESP and radar features',
-    heroTitle: 'Wardogs Features',
-    heroCaption: 'Review aimbot, ESP, 2D radar, no recoil, and current Elytra status',
+    alt: 'WARDOGS gameplay screenshot for Wardogs Cheats on PC',
+    title: 'Wardogs Cheats product details',
+    caption:
+      'Aimbot, silent aim, triggerbot, ESP, item ESP, and 2D/3D radar for WARDOGS with live cheat status',
+    heroAlt: 'Wardogs Cheats aimbot, ESP and radar features',
+    heroTitle: 'WARDOGS Cheats Features',
+    heroCaption: 'Review aimbot, player ESP, item ESP, 2D/3D radar, and current cheat status',
   },
 }
 
@@ -41,42 +42,42 @@ export const PAGE_IMAGES: Record<
   home: {
     src: IMAGE_1,
     og: PAGE_OG.home,
-    alt: 'Wardogs cheats ESP and aimbot artwork for WARDOGS on PC',
-    title: 'Wardogs cheats',
-    caption: 'Aimbot, ESP, and 2D radar overview for WARDOGS.',
+    alt: 'Wardogs Cheats ESP and aimbot screenshot for WARDOGS on PC',
+    title: 'Wardogs Cheats',
+    caption: 'Aimbot, ESP, and 2D/3D radar overview for WARDOGS.',
   },
   forums: {
-    src: IMAGE_1,
+    src: gameplayImagePath(4),
     og: PAGE_OG.forums,
-    alt: 'Wardogs cheats product artwork',
-    title: 'Wardogs Intel',
+    alt: 'Wardogs cheats gameplay screenshot for forums',
+    title: 'WARDOGS Cheats Intel',
     caption: 'Setup, aimbot, ESP, and radar guides for WARDOGS.',
   },
   reviews: {
-    src: IMAGE_2,
+    src: gameplayImagePath(8),
     og: PAGE_OG.reviews,
-    alt: 'Wardogs cheats review artwork',
+    alt: 'Wardogs cheats review screenshot',
     title: 'Wardogs cheats Reviews',
     caption: 'Feature and compatibility feedback for WARDOGS.',
   },
   faq: {
-    src: IMAGE_2,
+    src: gameplayImagePath(11),
     og: PAGE_OG.faq,
-    alt: 'Wardogs cheats FAQ artwork',
+    alt: 'Wardogs cheats FAQ screenshot',
     title: 'Wardogs FAQ',
     caption: 'Compatibility, feature, and setup answers for WARDOGS.',
   },
   support: {
-    src: IMAGE_1,
+    src: IMAGE_2,
     og: PAGE_OG.support,
-    alt: 'Wardogs cheats support artwork',
+    alt: 'Wardogs cheats support screenshot',
     title: 'Wardogs Support',
     caption: 'Delivery, loader, and Discord support for Wardogs cheats.',
   },
   product: {
     src: WARDOGS_COVER_CARD,
     og: PAGE_OG.product,
-    alt: 'Official WARDOGS cover art for the Wardogs cheats store',
+    alt: 'WARDOGS store card with gameplay preview',
     title: 'Wardogs Store',
     caption: 'Store details for WARDOGS ESP, aimbot, and 2D radar.',
   },

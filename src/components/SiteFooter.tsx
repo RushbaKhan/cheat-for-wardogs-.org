@@ -1,4 +1,3 @@
-import { LogoMark } from './LogoMark'
 import {
   OFFICIAL_GAME_LINKS,
   SITE_GUIDE_LINKS,
@@ -35,13 +34,10 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-12">
           <div className="max-w-sm shrink-0">
-            <div className="flex items-center gap-2">
-              <LogoMark className="shrink-0" />
-              <span className="font-semibold text-z-ink">{SITE_NAME}</span>
-            </div>
+            <p className="font-semibold text-z-ink">{SITE_NAME}</p>
             <p className="mt-3 text-sm leading-relaxed text-white/55">
-              {SITE_NAME} for WARDOGS on PC — aimbot, ESP, 2D radar, no recoil, and live
-              Elytra status, worldwide.
+              {SITE_NAME} for WARDOGS on PC — aimbot, silent aim, ESP, 2D/3D radar, and live
+              cheat status, worldwide.
             </p>
           </div>
 

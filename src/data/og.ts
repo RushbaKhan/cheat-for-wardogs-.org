@@ -1,6 +1,6 @@
 /**
  * Canonical 1200x630 JPEG Open Graph images for Google SERP thumbnails.
- * Every indexed URL maps to a unique crawlable /og/*.jpg under cheatsforwardogs.org.
+ * Every indexed URL maps to a unique crawlable /og/*.jpg under cheatforwardogs.org.
  */
 
 export const OG_HOME = '/og/home.jpg'

@@ -1,4 +1,4 @@
-﻿# Cloudflare Workers + static assets — required so CI `npx wrangler deploy` succeeds.
+# Cloudflare Workers + static assets � required so CI `npx wrangler deploy` succeeds.
 # (Dashboard is locked to that command; `wrangler pages deploy` is not used.)
 name = "buywardogscheats"
 main = "workers/site.js"
@@ -10,11 +10,11 @@ compatibility_date = "2026-09-12"
 command = "npm run build"
 
 [[routes]]
-pattern = "cheatsforwardogs.org"
+pattern = "cheatforwardogs.org"
 custom_domain = true
 
 [[routes]]
-pattern = "www.cheatsforwardogs.org"
+pattern = "www.cheatforwardogs.org"
 custom_domain = true
 
 [assets]

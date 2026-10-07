@@ -9,11 +9,12 @@ export function GameplayPreviewTile({ image, alt, title }: GameplayPreviewTilePr
         src={image}
         alt={alt}
         title={title}
-        width={480}
-        height={270}
+        width={1024}
+        height={576}
+        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         loading="lazy"
         decoding="async"
-        className="aspect-video w-full object-cover"
+        className="aspect-video w-full object-cover object-center"
       />
     </figure>
   )

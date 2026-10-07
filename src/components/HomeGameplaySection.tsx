@@ -13,7 +13,7 @@ export function HomeGameplaySection() {
           className="text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl"
         />
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/55 sm:text-base">
-          In-game screenshots from the {SITE_NAME} package.
+          Six hand-picked in-match stills from the {SITE_NAME} package.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {HOME_GAMEPLAY_SCREENSHOTS.map((tile) => (

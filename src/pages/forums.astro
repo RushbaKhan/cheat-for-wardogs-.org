@@ -1,7 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import { ForumsPage } from '../views/ForumsPage'
+import { BLOGS } from '../data/blogs'
 import { SEO, SITE_URL } from '../data/site'
+import { parseBoardCategoryId, threadViewCount } from '../lib/forum-board'
+
+const category = parseBoardCategoryId(Astro.url.searchParams.get('category'))
+const query = Astro.url.searchParams.get('q') ?? ''
+
+const threads = BLOGS.map((post) => ({
+  slug: post.slug,
+  title: post.title,
+  excerpt: post.excerpt,
+  tag: post.tag,
+  date: post.date,
+  replies: post.replies.length,
+  views: threadViewCount(post.slug),
+}))
 
 const jsonLdExtra = [
   {
@@ -15,5 +30,5 @@ const jsonLdExtra = [
 ---
 
 <BaseLayout seo={SEO.forums} jsonLdExtra={jsonLdExtra}>
-  <ForumsPage />
+  <ForumsPage threads={threads} category={category} query={query} />
 </BaseLayout>

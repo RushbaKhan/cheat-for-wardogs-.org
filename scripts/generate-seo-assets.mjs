@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Auto-generate 1200x630 JPEG Open Graph images for every indexed URL.
  * Google SERP / social crawlers fetch these for right-side thumbnails.
  * Never overwrites battlelog-sourced /media assets.
@@ -70,7 +70,7 @@ function overlaySvg(width, height, eyebrow, title, subtitle) {
         )
         .join('\n')}
       <text x="64" y="480" fill="#c9bdd2" font-size="26" font-family="Arial, sans-serif">${escapeXml(subtitle)}</text>
-      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">cheatsforwardogs.org</text>
+      <text x="64" y="560" fill="#9299a3" font-size="20" font-family="Arial, sans-serif">cheatforwardogs.org</text>
     </svg>
   `)
 }
@@ -115,14 +115,14 @@ const staticOg = [
     source: heroFull,
     eyebrow: 'WARDOGS CHEATS',
     title: 'Aimbot, ESP and Radar',
-    subtitle: 'Wardogs cheats from $35 · Elytra status',
+    subtitle: 'Wardogs Cheats from $35 — cheat status',
   },
   {
     file: 'wardogs-cheats.jpg',
     source: coverArt,
     eyebrow: 'PRODUCT DETAILS',
     title: 'Wardogs Store',
-    subtitle: 'ESP, aimbot, radar · $35 or $150',
+    subtitle: 'ESP, aimbot, radar — $35 or $150',
   },
   {
     file: 'forums.jpg',
@@ -143,7 +143,7 @@ const staticOg = [
     source: menuGif,
     eyebrow: 'FAQ',
     title: 'Wardogs FAQ',
-    subtitle: 'Price, Elytra status and setup',
+    subtitle: 'Price, cheat status and setup',
   },
   {
     file: 'support.jpg',
@@ -157,7 +157,7 @@ const staticOg = [
     source: heroFull,
     eyebrow: 'POLICY',
     title: 'Privacy Policy',
-    subtitle: 'How cheatsforwardogs.org handles order data',
+    subtitle: 'How cheatforwardogs.org handles order data',
   },
   {
     file: 'terms.jpg',
@@ -186,12 +186,12 @@ for (const item of staticOg) {
 const blogsSrc = await readFile(blogsPath, 'utf8')
 const forums = loadForumMeta(blogsSrc)
 if (!forums.length) {
-  // Fallback if regex misses — at least create from slugs
+  // Fallback if regex misses � at least create from slugs
   for (const slug of loadForumSlugs(blogsSrc)) {
     forums.push({
       slug,
       title: `Wardogs cheats ${slug}`,
-      description: 'Wardogs cheats guide on cheatsforwardogs.org',
+      description: 'Wardogs cheats guide on cheatforwardogs.org',
     })
   }
 }
@@ -210,7 +210,7 @@ for (const forum of forums) {
     source,
     'WARDOGS',
     forum.title.replace(/\s*\|\s*.*$/, '').slice(0, 48),
-    'Wardogs cheats · cheatsforwardogs.org',
+    'Wardogs cheats � cheatforwardogs.org',
   )
   created.push(file)
 }
@@ -240,7 +240,7 @@ if (!(await exists(faviconSrc))) {
   throw new Error(`Missing favicon source: ${faviconSrc}`)
 }
 
-/** White mark, black canvas → white pixels with luminance as alpha. */
+/** White mark, black canvas ? white pixels with luminance as alpha. */
 async function knockoutBlack(sourcePath) {
   const { data, info } = await sharp(sourcePath).ensureAlpha().raw().toBuffer({ resolveWithObject: true })
   for (let i = 0; i < data.length; i += 4) {
@@ -295,10 +295,4 @@ await writePaddedFavicon(48, 0.88, 'favicon-48.png')
 await writePaddedFavicon(180, 0.92, 'apple-touch-icon.png')
 await writeFile(join(root, 'public', 'favicon.ico'), icoFromPng(png32, 32))
 
-await knockoutMark
-  .clone()
-  .resize(80, 80, { fit: 'contain', background: transparent })
-  .webp({ quality: 92, alphaQuality: 100 })
-  .toFile(join(mediaDir, 'nav-logo.webp'))
-
-console.log(`SEO OG images ready (${created.length}): ${created.slice(0, 8).join(', ')}…`)
+console.log(`SEO OG images ready (${created.length}): ${created.slice(0, 8).join(', ')}`)

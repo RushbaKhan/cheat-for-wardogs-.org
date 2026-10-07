@@ -1,4 +1,4 @@
-﻿export type PolicySection = {
+export type PolicySection = {
   heading: string
   body: string[]
 }
@@ -20,10 +20,10 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/privacy',
     title: 'Privacy Policy | Wardogs cheats',
     description:
-      'How cheatsforwardogs.org handles order details, delivery email, Discord support messages, and basic site analytics for Wardogs cheats.',
+      'How cheatforwardogs.org handles order details, delivery email, Discord support messages, and basic site analytics for Wardogs cheats.',
     h1: 'Wardogs cheats Privacy Policy',
     intro:
-      'This page explains what we collect when you browse cheatsforwardogs.org, buy a license, or contact Discord support — and what we do not collect.',
+      'This page explains what we collect when you browse cheatforwardogs.org, buy a license, or contact Discord support — and what we do not collect.',
     sections: [
       {
         heading: 'What we collect',
@@ -45,8 +45,8 @@ export const POLICY_PAGES: PolicyPageContent[] = [
         heading: 'Cookies and third parties',
         body: [
           'Essential cookies may be set by checkout or CDN providers so payment and delivery work.',
-          'Preview media is hosted on cheatsforwardogs.org. Third-party embeds are not used for the main product preview.',
-          'Official WARDOGS, Steam, and Team17 links are external. Their privacy policies apply once you leave cheatsforwardogs.org.',
+          'Preview media is hosted on cheatforwardogs.org. Third-party embeds are not used for the main product preview.',
+          'Official WARDOGS, Steam, and Team17 links are external. Their privacy policies apply once you leave cheatforwardogs.org.',
         ],
       },
       {
@@ -68,10 +68,10 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/terms',
     title: 'Terms of Use | Wardogs cheats',
     description:
-      'License rules, age limits, Elytra risk, and liability limits for Wardogs cheats on cheatsforwardogs.org.',
+      'License rules, age limits, EAC risk, and liability limits for Wardogs cheats on cheatforwardogs.org.',
     h1: 'Wardogs cheats Terms of Use',
     intro:
-      'Buying or running Wardogs cheats means you accept these terms. A license covers personal use of aimbot, ESP, radar, no recoil, and no spread tools for WARDOGS on Windows PC — nothing beyond that.',
+      'Buying or running Wardogs cheats means you accept these terms. A license covers personal use of aimbot, ESP, radar, silent aim, triggerbot, and ESP tools for WARDOGS on Windows PC — nothing beyond that.',
     sections: [
       {
         heading: 'Acceptance and what a license covers',
@@ -83,8 +83,8 @@ export const POLICY_PAGES: PolicyPageContent[] = [
       {
         heading: 'Risk and anti-cheat disclaimer',
         body: [
-          'WARDOGS uses Elytra on the current Windows PC client. Using third-party software can violate the game terms and lead to account penalties.',
-          'We push rebuilds after Elytra and game updates when needed, but nothing here guarantees a build stays clear forever or that an account stays safe.',
+          'WARDOGS uses Easy Anti-Cheat (EAC) on the current Windows PC client. Using third-party software can violate the game terms and lead to account penalties.',
+          'We push rebuilds after EAC and game updates when needed, but nothing here guarantees a build stays clear forever or that an account stays safe.',
           'All risk sits with you. We accept no liability for bans or other damage tied to using the product. Check live status before you load.',
         ],
       },
@@ -115,7 +115,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     path: '/refunds',
     title: 'Refund Policy | Wardogs cheats',
     description:
-      'When refunds apply for digital Wardogs cheats licenses, delivery failures, and Updating status windows on cheatsforwardogs.org.',
+      'When refunds apply for digital Wardogs cheats licenses, delivery failures, and Updating status windows on cheatforwardogs.org.',
     h1: 'Wardogs cheats Refund Policy',
     intro:
       'Licenses are digital goods. This page covers when we can refund, when we cannot, and how to open a request with your order ID on Discord.',

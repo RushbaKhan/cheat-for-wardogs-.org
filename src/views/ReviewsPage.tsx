@@ -39,7 +39,7 @@ export function ReviewsPage() {
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">
               Feedback from players who bought {SITE_NAME} — ESP, aimbot, 2D radar, and whether
-              the build held after the last Elytra update.
+              the build held after the last EAC update.
             </p>
             <p className="mt-4 text-sm text-white/45" aria-label="Aggregate rating">
               Average {aggregate.ratingValue} / 5 · {aggregate.reviewCount} reviews
@@ -78,7 +78,7 @@ export function ReviewsPage() {
                 Ready to buy {SITE_NAME}?
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/50">
-                Confirm live Elytra status on the store page, then checkout.
+                Confirm live cheat status on the store page, then checkout.
               </p>
             </div>
             <div className="flex shrink-0 flex-wrap items-center gap-3">

@@ -20,7 +20,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 5,
     datePublished: '2026-09-14',
-    body: 'Status on the store page matched what I got in a control-zone fight. Box and health ESP held after the first Elytra update — glad I waited for a clear status before loading.',
+    body: 'Status on the store page matched what I got in a control-zone fight. Box and health ESP held after the first EAC update — glad I waited for a clear status before loading.',
   },
   {
     id: '2',
@@ -29,7 +29,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 5,
     datePublished: '2026-09-13',
-    body: 'Bought it for vehicle ESP and radar markers and left aimbot off. Seeing transports through the hills changes how I rotate into the zone.',
+    body: 'Bought it for item ESP and 3D radar and left aimbot off. Reading loot routes through the hills changes how I rotate into the zone.',
   },
   {
     id: '3',
@@ -38,7 +38,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 4,
     datePublished: '2026-09-13',
-    body: 'No fake multi-game catalog. Player markers plus honest Updating versus clear labels is what I wanted before buying Wardogs cheats.',
+    body: 'No fake multi-game catalog. Player markers plus honest Updating versus clear labels is what I wanted before buying Wardogs Cheats.',
   },
   {
     id: '4',
@@ -56,7 +56,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 5,
     datePublished: '2026-09-12',
-    body: 'Menu was easy. Vehicle ESP on, radar range short. Setup guides covered antivirus and load order so the first launch was not wasted.',
+    body: 'Menu was easy. Item ESP on, 2D radar range short. Setup guides covered antivirus and load order so the first launch was not wasted.',
   },
   {
     id: '6',
@@ -65,7 +65,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 5,
     datePublished: '2026-09-11',
-    body: 'Monthly at $35 was the right first step. Instant delivery and a live Elytra status sold me before I looked at the lifetime plan.',
+    body: 'Monthly at $35 was the right first step. Instant delivery and a live cheat status sold me before I looked at the lifetime plan.',
   },
   {
     id: '7',
@@ -74,7 +74,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 4,
     datePublished: '2026-09-11',
-    body: 'Health and weapon readouts were solid. No recoil helped when a third player pushed from a truck. Aimbot FOV took a few minutes to dial in.',
+    body: 'Health and class readouts were solid. Triggerbot helped when a third player pushed from a truck. Silent aim FOV took a few minutes to dial in.',
   },
   {
     id: '8',
@@ -83,7 +83,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 5,
     datePublished: '2026-09-14',
-    body: 'Vehicle ESP is useful so I can tell armor from empty jeeps. The feature list matched the menu.',
+    body: 'Pickup ESP is useful so I can spot cash crates faster. The feature list matched the menu.',
   },
   {
     id: '9',
@@ -92,7 +92,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 4,
     datePublished: '2026-09-15',
-    body: 'No recoil plus a tight FOV keeps sprays from climbing off a helmet. I still check status after every Elytra note.',
+    body: 'Silent aim plus a tight FOV keeps tracking smooth without hard snaps. I still check status after every EAC patch note.',
   },
   {
     id: '10',

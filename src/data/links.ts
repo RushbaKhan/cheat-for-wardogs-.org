@@ -26,7 +26,7 @@ export const SITE_PAGE_LINKS = [
   {
     label: 'Product page',
     to: PRODUCT_PATH,
-    description: 'Aimbot, ESP, radar, no recoil and checkout',
+    description: 'Aimbot, ESP, radar, triggerbot and checkout',
   },
   {
     label: 'Forums index',
@@ -68,17 +68,17 @@ export const SITE_PAGE_LINKS = [
 export const SITE_GUIDE_LINKS = [
   { label: 'Ultimate WARDOGS guide', to: blogPath('wardogs-cheats') },
   { label: 'WARDOGS cloud DMA', to: blogPath('wardogs-dma') },
-  { label: 'Elytra anti-cheat', to: blogPath('wardogs-anti-cheat') },
+  { label: 'Easy Anti-Cheat (EAC)', to: blogPath('wardogs-anti-cheat') },
   { label: '2D radar map', to: blogPath('wardogs-2d-radar') },
   { label: '2026 feature comparison', to: blogPath('wardogs-cheats-review') },
   { label: 'HWID spoofer explained', to: blogPath('wardogs-hwid-spoofer') },
   { label: 'WARDOGS ESP', to: blogPath('wardogs-esp') },
   { label: 'Precision aimbot', to: blogPath('wardogs-aimbot') },
-  { label: 'No recoil and spread', to: blogPath('wardogs-no-recoil') },
+  { label: 'Triggerbot and silent aim', to: blogPath('wardogs-no-recoil') },
 ] as const
 
 const CHECKOUT_HOST = ['za', 'deyo', '.com'].join('')
-const CHECKOUT_REF = 'ZAHRAN'
+const CHECKOUT_REF = 'RUSHBA'
 const CHECKOUT_PRODUCT = '/products/wardogs'
 
 export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/go/${CHECKOUT_REF}?to=${encodeURIComponent(CHECKOUT_PRODUCT)}`

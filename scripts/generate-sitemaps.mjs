@@ -1,5 +1,5 @@
-﻿/**
- * Single sitemap at /sitemap.xml — every indexed page URL + image entries.
+/**
+ * Single sitemap at /sitemap.xml � every indexed page URL + image entries.
  * One urlset only (never a sitemap index). 404 is excluded.
  */
 import { existsSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'node:fs'
@@ -10,17 +10,22 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const publicDir = join(root, 'public')
 const dataDir = join(root, 'src', 'data')
 const pagesDir = join(root, 'src', 'pages')
-const SITE = (process.env.SITE_URL || 'https://cheatsforwardogs.org').replace(/\/$/, '')
+const SITE = (process.env.SITE_URL || 'https://cheatforwardogs.org').replace(/\/$/, '')
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = ['en', 'x-default']
 
 const PREVIEW_POSTER = '/media/wardogs-poster.jpg'
-const IMAGE_1 = '/media/image-1.webp'
-const IMAGE_2 = '/media/image-2.webp'
-const IMAGE_3 = '/media/image-3.webp'
+const GAMEPLAY_IMAGE_COUNT = 13
+const GAMEPLAY_IMAGES = Array.from(
+  { length: GAMEPLAY_IMAGE_COUNT },
+  (_, i) => `/media/image-${i + 1}.webp`,
+)
+const IMAGE_1 = GAMEPLAY_IMAGES[0]
+const IMAGE_2 = GAMEPLAY_IMAGES[1]
+const IMAGE_3 = GAMEPLAY_IMAGES[2]
 const WARDOGS_COVER = '/media/wardogs-cover.webp'
 const WARDOGS_COVER_CARD = '/media/wardogs-cover-card.webp'
-const NAV_LOGO = '/media/nav-logo.webp'
+const HERO_VIDEO = '/videos/final.mp4'
 const HERO_FULL = IMAGE_1
 const COVER = WARDOGS_COVER
 const ESP = IMAGE_2
@@ -29,13 +34,11 @@ const VIDEO_THUMB = IMAGE_2
 const OG_DEFAULT = '/og/wardogs-cheats.jpg'
 
 const ALL_SITE_IMAGES = [
-  IMAGE_1,
-  IMAGE_2,
-  IMAGE_3,
+  ...GAMEPLAY_IMAGES,
   WARDOGS_COVER,
   WARDOGS_COVER_CARD,
-  NAV_LOGO,
   PREVIEW_POSTER,
+  HERO_VIDEO,
   '/og/home.jpg',
   OG_DEFAULT,
   '/og/forums.jpg',
@@ -47,17 +50,20 @@ const ALL_SITE_IMAGES = [
   '/og/refunds.jpg',
 ]
 
-const FORUM_IMAGES = {
-  'wardogs-cheats': IMAGE_1,
-  'wardogs-dma': IMAGE_2,
-  'wardogs-anti-cheat': IMAGE_3,
-  'wardogs-2d-radar': IMAGE_1,
-  'wardogs-cheats-review': IMAGE_2,
-  'wardogs-hwid-spoofer': IMAGE_3,
-  'wardogs-esp': IMAGE_1,
-  'wardogs-aimbot': IMAGE_2,
-  'wardogs-no-recoil': IMAGE_3,
-}
+const FORUM_SLUGS = [
+  'wardogs-cheats',
+  'wardogs-dma',
+  'wardogs-anti-cheat',
+  'wardogs-2d-radar',
+  'wardogs-cheats-review',
+  'wardogs-hwid-spoofer',
+  'wardogs-esp',
+  'wardogs-aimbot',
+  'wardogs-no-recoil',
+]
+const FORUM_IMAGES = Object.fromEntries(
+  FORUM_SLUGS.map((slug, i) => [slug, GAMEPLAY_IMAGES[i % GAMEPLAY_IMAGES.length]]),
+)
 
 const PAGE_META = {
   '/': { priority: '1.0', changefreq: 'daily' },
@@ -170,7 +176,7 @@ function imagesForPath(path, games, forums) {
       {
         src: '/og/home.jpg',
         title: 'Wardogs cheats Open Graph',
-        caption: 'Google and social preview image for cheatsforwardogs.org homepage.',
+        caption: 'Google and social preview image for cheatforwardogs.org homepage.',
       },
       {
         src: HERO_FULL,
@@ -183,9 +189,9 @@ function imagesForPath(path, games, forums) {
         caption: 'WARDOGS cheats product cover for checkout and social previews.',
       },
       {
-        src: NAV_LOGO,
-        title: 'Wardogs cheats Navbar Mark',
-        caption: 'Small navbar mark for cheatsforwardogs.org.',
+        src: HERO_VIDEO,
+        title: 'Wardogs Cheats Hero Video',
+        caption: 'WARDOGS gameplay hero loop for the homepage and forums.',
       },
       {
         src: VIDEO_THUMB,
@@ -195,8 +201,13 @@ function imagesForPath(path, games, forums) {
       {
         src: OG_DEFAULT,
         title: 'Wardogs cheats Product Social Preview',
-        caption: 'Default Open Graph image for cheatsforwardogs.org product pages.',
+        caption: 'Default Open Graph image for cheatforwardogs.org product pages.',
       },
+      ...GAMEPLAY_IMAGES.map((src, i) => ({
+        src,
+        title: `WARDOGS gameplay screenshot ${i + 1}`,
+        caption: 'HD in-match ESP, radar, and aim overlay capture.',
+      })),
     ]
   }
 
@@ -233,6 +244,11 @@ function imagesForPath(path, games, forums) {
         title: `${game.name} ESP Gameplay`,
         caption: `Player ESP preview for ${game.name}.`,
       },
+      ...GAMEPLAY_IMAGES.slice(0, 6).map((src, i) => ({
+        src,
+        title: `${game.name} preview ${i + 1}`,
+        caption: `Store preview still ${i + 1} for ${game.name}.`,
+      })),
       {
         src: PREVIEW_POSTER,
         title: 'Wardogs cheats Preview Poster',
@@ -270,7 +286,7 @@ function imagesForPath(path, games, forums) {
         title: `${forum?.title || slug} Open Graph`,
         caption:
           forum?.metaDescription ||
-          `Google preview image for ${forum?.title || slug} on cheatsforwardogs.org.`,
+          `Google preview image for ${forum?.title || slug} on cheatforwardogs.org.`,
       },
       {
         src: FORUM_IMAGES[slug] || MENU,
@@ -314,7 +330,7 @@ function imagesForPath(path, games, forums) {
       {
         src: '/og/privacy.jpg',
         title: 'Wardogs cheats Privacy Policy',
-        caption: 'Privacy policy preview for cheatsforwardogs.org orders and support.',
+        caption: 'Privacy policy preview for cheatforwardogs.org orders and support.',
       },
     ]
   }
@@ -447,8 +463,8 @@ function validate(games, forums, allPaths, sitemap) {
   if (/tarkov|tarkovcheats|dayzcheats|warzonecheats|wardogshacks|the-finals|the finals|arena-breakout|undetected/i.test(sitemap)) {
     errors.push('Sitemap contains leftover branding')
   }
-  if (!sitemap.includes('cheatsforwardogs.org')) {
-    errors.push('Sitemap must target cheatsforwardogs.org')
+  if (!sitemap.includes('cheatforwardogs.org')) {
+    errors.push('Sitemap must target cheatforwardogs.org')
   }
   if (/tarkovcheats|warzonecheats|wardogshacks|theisle|dayzcheats/i.test(sitemap)) {
     errors.push('Sitemap contains a legacy domain')

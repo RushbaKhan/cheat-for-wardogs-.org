@@ -12,7 +12,7 @@ Apply these requirements whenever creating, replacing, or editing forum posts in
 - Write clear, direct English at an 8th- to 10th-grade reading level.
 - Keep paragraphs to 1–4 sentences.
 - Do not use the words `tapestry`, `testament`, `delve`, or `paramount`.
-- Do not moralize. Describe Elytra and compatibility as technical systems whose behavior can change after updates.
+- Do not moralize. Describe EAC and compatibility as technical systems whose behavior can change after updates.
 - Never mention `zadeyo` or `Zadeyo` in article copy, metadata, image text, or replies.
 - Verify time-sensitive game, platform, feature, and anti-cheat claims with reliable sources before writing.
 - Never use the word `undetected` in article copy, metadata, image text, or replies. Describe compatibility and detection status as labels that can change after updates.
@@ -29,7 +29,7 @@ Apply these requirements whenever creating, replacing, or editing forum posts in
   - Type 3, informational/guide: answer the query first and connect relevant feature threads to specific gameplay friction.
 - Prevent keyword cannibalization between forum threads. Each post must stay focused on its unique primary keyword and search intent.
 - Include the exact transactional phrase exactly once in the article body:
-  `<a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a>`
+  `<a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a>`
 - The exact phrase may also occur in a supplied title when it is the primary keyword; the one-use limit applies to body copy.
 - Finish with 4–5 useful FAQ entries whose answers are 2–4 concise sentences.
 - Keep the existing strong purchase CTA rendered by `BlogPostPage.tsx`.

@@ -61,7 +61,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'How Wardogs tools fit a control-zone match',
         body: [
-          '<a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a> can combine visual information, aim controls, radar, and weapon settings in one Windows PC menu. The useful part is not turning on every option. It is choosing a small set that supports how you fight, rotate, and hold the zone.',
+          '<a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> can combine visual information, aim controls, radar, and weapon settings in one Windows PC menu. The useful part is not turning on every option. It is choosing a small set that supports how you fight, rotate, and hold the zone.',
           'WARDOGS is a 100-player tactical all-out warfare FPS from BULKHEAD, published by Team17. Official pages describe three teams fighting over a randomized control zone on a large, destructible battlefield with vehicles and combined-arms play.',
           'That structure makes information management important. A crowded overlay can hide a truck just as easily as a clean display can reveal it, so a controlled setup matters more than the longest feature list.',
         ],
@@ -116,7 +116,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Use a clean pre-match checklist',
         body: [
-          'Confirm the current game build, Windows support, and product status before loading. WARDOGS uses Elytra, and a <strong>Wardogs anti cheat</strong> patch can change compatibility even when the same setup worked in an earlier session.',
+          'Confirm the current game build, Windows support, and product status before loading. WARDOGS uses Easy Anti-Cheat (EAC), and a <strong>Wardogs anti cheat</strong> patch can change compatibility even when the same setup worked in an earlier session.',
           'Close overlays that you do not need, keep the official client current, and start with a minimal configuration. Add one visual group at a time after the menu and game are stable.',
           'For a focused look at player and vehicle markers, read the <a href="/forums/wardogs-2d-radar">WARDOGS 2D radar guide</a> next.',
         ],
@@ -134,7 +134,7 @@ export const BLOGS: BlogPost[] = [
         body: [
           'Compare the exact feature list, supported Windows versions, license duration, update communication, and support channel. Clear monthly or lifetime terms are easier to judge than a checkout with no stated duration.',
           'Look for direct controls rather than broad claims. FOV, radar range, box ESP, vehicle ESP, and no recoil explain more than a generic promise of better performance.',
-          'Treat every compatibility label as a current status report, not a permanent condition. Recheck it after major game, launcher, Windows, or Elytra updates.',
+          'Treat every compatibility label as a current status report, not a permanent condition. Recheck it after major game, launcher, Windows, or EAC updates.',
         ],
       },
     ],
@@ -185,7 +185,7 @@ export const BLOGS: BlogPost[] = [
       },
       {
         q: 'What do I check after a WARDOGS patch?',
-        a: 'Read live Elytra status, confirm Windows support, and load only when the label is clear. Recheck radar range and FOV if the client update changed default sensitivity.',
+        a: 'Read live cheat status, confirm Windows support, and load only when the label is clear. Recheck radar range and FOV if the client update changed default sensitivity.',
       },
     ],
   },
@@ -198,7 +198,7 @@ export const BLOGS: BlogPost[] = [
     metaDescription:
       'Learn how Wardogs DMA uses cloud processing instead of a second PC, including hardware, latency, connectivity, compatibility, and detection limits.',
     searchTerms:
-      'wardogs dma cloud dma wardogs anti cheat remote processing firmware latency iommu elytra',
+      'wardogs dma cloud dma wardogs anti cheat remote processing firmware latency iommu eac',
     date: '2026-09-30',
     readMinutes: 9,
     tag: 'Cloud DMA',
@@ -271,7 +271,7 @@ export const BLOGS: BlogPost[] = [
         body: [
           'Traditional DMA normally uses a second PC for local processing. Cloud DMA can remove that second computer, but it adds dependence on provider servers, account access, regional routing, and internet quality.',
           'Confirm whether the package includes the DMA board, firmware, cloud access, display client, updates, supported regions, and setup support. Also ask how data is handled and what happens when the remote service is unavailable.',
-          'For current commercial options, review <a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a>. The <a href="/forums/wardogs-cheats">main WARDOGS guide</a> covers the wider feature workflow, while the <a href="/forums/wardogs-hwid-spoofer">HWID guide</a> explains why identifier changes are a separate system.',
+          'For current commercial options, review <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a>. The <a href="/forums/wardogs-cheats">main WARDOGS guide</a> covers the wider feature workflow, while the <a href="/forums/wardogs-hwid-spoofer">HWID guide</a> explains why identifier changes are a separate system.',
         ],
       },
     ],
@@ -328,28 +328,28 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'wardogs-anti-cheat',
-    title: 'How Elytra Works as the Wardogs Anti Cheat',
+    title: 'Is WARDOGS Using Easy Anti-Cheat? EAC and Cheat Status',
     excerpt:
-      'Learn how the Wardogs anti cheat Elytra works on Windows PC, how Clear and Updating labels change after patches, and when to wait before loading.',
-    metaTitle: 'How Elytra Works on Wardogs',
+      'Learn how Easy Anti-Cheat (EAC) works on WARDOGS for Windows PC, how Clear and Updating labels change after patches, and when to wait before loading.',
+    metaTitle: 'WARDOGS EAC and Anti-Cheat Status',
     metaDescription:
-      'Learn how the Wardogs anti cheat Elytra works on Windows PC, how status labels change after patches, and when to wait before loading.',
+      'Learn how WARDOGS uses Easy Anti-Cheat on Windows PC, how cheat status labels change after patches, and when to wait before loading.',
     searchTerms:
-      'wardogs anti cheat elytra status updating clear windows pc compatibility',
+      'wardogs anti cheat wardogs eac is wardogs using easy anti cheat cheat status updating clear',
     date: '2026-09-30',
     readMinutes: 8,
     tag: 'Status',
     sections: [
       {
-        heading: 'What the Wardogs anti cheat is',
+        heading: 'What anti-cheat WARDOGS uses',
         body: [
-          'The <strong>Wardogs anti cheat</strong> on the current Windows PC client is Elytra. It sits with the game process and can also use server-side match data, so a local menu change does not cover every check.',
-          'Earlier Steam listings also mentioned Easy Anti-Cheat. On this site, Elytra is the live label that matters before you load. If the store shows Updating, wait. Load only when status is clear.',
+          'The <strong>Wardogs anti cheat</strong> on the current Windows PC client is Easy Anti-Cheat (EAC). It sits with the game process and can also use server-side match data, so a local menu change does not cover every check.',
+          'Publisher documentation describes enforcement against ESP, aimbots, triggerbots, and radar-style tools. On this site, live cheat status is the label that matters before you load. If the store shows Updating, wait. Load only when status is clear.',
           'That is a technical status, not a promise about future patches. Client updates, map changes, and security stack changes can all move a build from clear back to Updating.',
         ],
       },
       {
-        heading: 'How Elytra status labels work',
+        heading: 'How cheat status labels work',
         body: [
           'Clear means the current public build was tested against the live WARDOGS client. Updating means a patch landed and the menu is not confirmed yet.',
           'Treat those labels as point-in-time reports. They describe the last test, not a permanent compatibility lock for every future Tuesday update.',
@@ -359,13 +359,13 @@ export const BLOGS: BlogPost[] = [
             heading: 'What Updating actually means',
             body: [
               'Updating is a hold. It does not mean every feature is gone forever, and it does not mean you should force an old loader into a new client.',
-              'If status is Updating, skip launch until the label returns to clear. Forcing a stale build after an Elytra or client change is how people waste a session.',
+              'If status is Updating, skip launch until the label returns to clear. Forcing a stale build after an EAC or client change is how people waste a session.',
             ],
           },
           {
             heading: 'What to read besides the badge',
             body: [
-              'Check the feature list on the same day you buy. Aimbot, ESP, radar, no recoil, and no spread can ship on different test schedules after a large patch.',
+              'Check the feature list on the same day you buy. Aimbot, ESP, radar, silent aim, and triggerbot can ship on different test schedules after a large patch.',
               'If a thread and the store disagree, trust the live store status. Forum posts can lag a few hours behind a client hotfix.',
             ],
           },
@@ -374,17 +374,17 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'What changes after a WARDOGS patch',
         body: [
-          'A WARDOGS client update can change memory layouts, module lists, and input paths that Elytra watches. Visual overlays and aim helpers then need a matching rebuild.',
+          'A WARDOGS client update can change memory layouts, module lists, and input paths that EAC watches. Visual overlays and aim helpers then need a matching rebuild.',
           'Server-side stats still apply even when the local client looks unchanged. Unusual accuracy, tracking, or movement can be reviewed without finding a local process.',
-          'After a patch, confirm Windows version support, then recheck radar range and FOV if sensitivity defaults moved. For the public menu and checkout, open <a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a> and read the live label first.',
+          'After a patch, confirm Windows version support, then recheck radar range and FOV if sensitivity defaults moved. For the public menu and checkout, open <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> and read the live label first.',
         ],
       },
       {
-        heading: 'How DMA and HWID relate to Elytra',
+        heading: 'How DMA and HWID relate to EAC',
         body: [
-          'Elytra is the client security layer. <a href="/forums/wardogs-dma">Wardogs cloud DMA</a> combines a local hardware data path with remote processing. They are not the same product claim.',
-          'An <a href="/forums/wardogs-hwid-spoofer">HWID spoofer</a> changes or masks selected identifiers. It does not turn Elytra off and it does not replace a clear status label.',
-          'Use the DMA and HWID threads when you need those technical details. Use this thread when you need to know whether Elytra is currently clear to load.',
+          'EAC is the client security layer. <a href="/forums/wardogs-dma">Wardogs cloud DMA</a> combines a local hardware data path with remote processing. They are not the same product claim.',
+          'An <a href="/forums/wardogs-hwid-spoofer">HWID spoofer</a> changes or masks selected identifiers. It does not turn EAC off and it does not replace a clear status label.',
+          'Use the DMA and HWID threads when you need those technical details. Use this thread when you need to know whether EAC is currently clear to load.',
         ],
       },
       {
@@ -405,7 +405,7 @@ export const BLOGS: BlogPost[] = [
       {
         author: 'RidgeHold',
         date: 'Sep 30, 2026',
-        body: 'Good call on not mixing DMA and Elytra into one claim. I wanted the status thread, not a hardware shopping list.',
+        body: 'Good call on not mixing DMA and EAC into one claim. I wanted the status thread, not a hardware shopping list.',
       },
       {
         author: 'WaitThenLoad',
@@ -426,11 +426,11 @@ export const BLOGS: BlogPost[] = [
     faqs: [
       {
         q: 'What anti cheat does WARDOGS use?',
-        a: 'The current Windows PC client uses Elytra. That is the Wardogs anti cheat this site reports as a live Clear or Updating label. Earlier Steam pages also mentioned Easy Anti-Cheat, but the label to watch before loading is Elytra.',
+        a: 'The current Windows PC client uses Easy Anti-Cheat (EAC). That is the Wardogs anti cheat this site reports as a live Clear or Updating label. Earlier Steam pages also mentioned Easy Anti-Cheat, but the label to watch before loading is EAC.',
       },
       {
         q: 'What does Updating mean?',
-        a: 'Updating means a WARDOGS or Elytra change landed and the public build is not confirmed yet. Wait. Do not force an older loader into a newer client.',
+        a: 'Updating means a WARDOGS or EAC change landed and the public build is not confirmed yet. Wait. Do not force an older loader into a newer client.',
       },
       {
         q: 'Does a clear label last forever?',
@@ -438,10 +438,10 @@ export const BLOGS: BlogPost[] = [
       },
       {
         q: 'Is DMA the same as the Wardogs anti cheat?',
-        a: 'No. Elytra is the client security layer. Cloud DMA combines a local hardware memory path with remote processing. Read the DMA guide for that setup, and use this thread for Elytra status.',
+        a: 'No. EAC is the client security layer. Cloud DMA combines a local hardware memory path with remote processing. Read the DMA guide for that setup, and use this thread for cheat status.',
       },
       {
-        q: 'Where do I check Elytra status before checkout?',
+        q: 'Where do I check cheat status before checkout?',
         a: 'Read the live badge on the store page, then confirm monthly $35 or lifetime $150. If the forum and the store disagree after a hotfix, trust the store label.',
       },
     ],
@@ -497,7 +497,7 @@ export const BLOGS: BlogPost[] = [
         body: [
           'Start with player markers and a short range. Add vehicle markers next, then test whether the extra symbols improve route choices or only add clutter.',
           'Keep aimbot independent from radar. The <a href="/forums/wardogs-aimbot">Wardogs aimbot guide</a> covers FOV and target selection, while radar remains an awareness tool.',
-          'For the current feature list, plans, and compatibility label, review <a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a> before changing your match setup.',
+          'For the current feature list, plans, and compatibility label, review <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> before changing your match setup.',
         ],
       },
     ],
@@ -559,9 +559,9 @@ export const BLOGS: BlogPost[] = [
       'A 2026 comparison of visual, aim, radar, compatibility, support, and license factors for WARDOGS PC tools.',
     metaTitle: 'Best Wardogs Cheats Review 2026',
     metaDescription:
-      'Compare Wardogs cheats by features, Elytra status, PC compatibility, support, pricing, and overall value in this practical 2026 review.',
+      'Compare Wardogs cheats by features, cheat status, PC compatibility, support, pricing, and overall value in this practical 2026 review.',
     searchTerms:
-      'wardogs cheats review comparison 2026 elytra esp aimbot radar value',
+      'wardogs cheats review comparison 2026 eac esp aimbot radar value',
     date: '2026-09-30',
     readMinutes: 10,
     tag: 'Comparison',
@@ -586,7 +586,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Compatibility and status reporting',
         body: [
-          'Read the <a href="/forums/wardogs-anti-cheat">Wardogs anti cheat</a> guide for Elytra Clear versus Updating labels. A game patch can change compatibility, so a shop should show Updating instead of claiming every build is always ready.',
+          'Read the <a href="/forums/wardogs-anti-cheat">Wardogs anti cheat</a> guide for cheat Clear versus Updating labels. A game patch can change compatibility, so a shop should show Updating instead of claiming every build is always ready.',
           'Windows PC support should be explicit. Console and Linux are different platforms and should not be implied by a Windows loader.',
           'Hardware routes need separate documentation. The <a href="/forums/wardogs-dma">Wardogs cloud DMA guide</a> explains how local hardware and remote processing change the setup without creating a permanent detection guarantee.',
         ],
@@ -595,7 +595,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Price, support, and value',
         body: [
           'Monthly at $35 and lifetime at $150 are clear terms. Value depends on whether the menu matches the public feature list and whether Discord support answers with an order ID.',
-          'For the current public feature list and checkout options, open <a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a> after you compare the threads above.',
+          'For the current public feature list and checkout options, open <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> after you compare the threads above.',
         ],
       },
       {
@@ -637,7 +637,7 @@ export const BLOGS: BlogPost[] = [
     faqs: [
       {
         q: 'What makes a 2026 WARDOGS comparison useful?',
-        a: 'Separate ESP, radar, aim, and recoil controls, plus honest status after Elytra patches, a stated license term, and a real support channel.',
+        a: 'Separate ESP, radar, aim, and recoil controls, plus honest status after EAC patches, a stated license term, and a real support channel.',
       },
       {
         q: 'Is lifetime always better value than monthly?',
@@ -700,7 +700,7 @@ export const BLOGS: BlogPost[] = [
         body: [
           'An identifier change does not disable or replace the <a href="/forums/wardogs-anti-cheat">Wardogs anti cheat</a>. The <a href="/forums/wardogs-dma">DMA security guide</a> explains why client checks, server analysis, input patterns, reports, and hardware validation can still matter after an update.',
           'It also does not modify ESP, radar, aimbot, recoil, or spread settings. Those are feature controls, while spoofing deals with selected machine identifiers.',
-          'Treat every compatibility label as current status rather than a permanent safety promise. For the current public feature list and license options, review <a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a> after checking the live product status.',
+          'Treat every compatibility label as current status rather than a permanent safety promise. For the current public feature list and license options, review <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> after checking the live product status.',
         ],
       },
       {
@@ -732,7 +732,7 @@ export const BLOGS: BlogPost[] = [
       {
         author: 'StatusFirst',
         date: 'Sep 30, 2026',
-        body: 'Good clarification that spoofing does not replace Elytra status. I still check the current build before changing anything at the system level.',
+        body: 'Good clarification that spoofing does not replace cheat status. I still check the current build before changing anything at the system level.',
       },
       {
         author: 'BusAndBoard',
@@ -751,7 +751,7 @@ export const BLOGS: BlogPost[] = [
       },
       {
         q: 'Does spoofing replace WARDOGS compatibility checks?',
-        a: 'No. Identifier changes do not remove client, server, behavior, report, or hardware checks. Current Elytra and product status still matter after every update.',
+        a: 'No. Identifier changes do not remove client, server, behavior, report, or hardware checks. Current EAC and product status still matter after every update.',
       },
       {
         q: 'Is an HWID spoofer the same as DMA?',
@@ -811,7 +811,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Keep the overlay usable',
         body: [
           'Turn groups on one at a time. If box ESP already explains a compound, you may not need every skeleton line at once.',
-          'For the current menu list and Elytra status before a match, check <a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a> on the store page.',
+          'For the current menu list and cheat status before a match, check <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> on the store page.',
         ],
       },
       {
@@ -913,7 +913,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'When to keep aimbot off',
         body: [
           'Logistics runs, vehicle gunning, and long-range spotting often feel cleaner with ESP only. Enable Aimbot when you are holding a compound or clearing a building.',
-          'Confirm live status, then review the current menu on <a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a> before you change production settings.',
+          'Confirm live status, then review the current menu on <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> before you change production settings.',
         ],
       },
       {
@@ -1022,8 +1022,8 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'After a balance patch',
         body: [
-          'WARDOGS is in Early Access, so weapon feel can change. Recheck no recoil and no spread after a client update, then confirm Elytra status before you load.',
-          'When you are ready to match the live menu to a license, open <a href="https://cheatsforwardogs.org/wardogs-cheats">Wardogs cheats</a>.',
+          'WARDOGS is in Early Access, so weapon feel can change. Recheck no recoil and no spread after a client update, then confirm cheat status before you load.',
+          'When you are ready to match the live menu to a license, open <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a>.',
         ],
       },
       {
@@ -1077,7 +1077,7 @@ export const BLOGS: BlogPost[] = [
       },
       {
         q: 'When should I retest after an update?',
-        a: 'After a WARDOGS weapon or client patch, and after any change to mouse sensitivity. Recheck Elytra status before loading.',
+        a: 'After a WARDOGS weapon or client patch, and after any change to mouse sensitivity. Recheck cheat status before loading.',
       },
       {
         q: 'How can I compare recoil settings fairly?',
@@ -1086,6 +1086,20 @@ export const BLOGS: BlogPost[] = [
     ],
   },
 ]
+
+/** Shorter titles on homepage intel cards (full titles stay on thread pages). */
+export const HOME_INTEL_CARD_TITLES: Record<string, string> = {
+  'wardogs-cheats': 'Starter guide: ESP, aim, and radar',
+  'wardogs-dma': 'Cloud DMA on PC — what to expect',
+  'wardogs-anti-cheat': 'EAC status after game patches',
+  'wardogs-2d-radar': 'Dial in 2D radar range and markers',
+  'wardogs-cheats-review': 'Feature and value comparison',
+  'wardogs-hwid-spoofer': 'HWID spoofer — identifiers explained',
+}
+
+export function homeIntelCardTitle(slug: string, fallback: string) {
+  return HOME_INTEL_CARD_TITLES[slug] ?? fallback
+}
 
 export function getBlog(slug: string) {
   return BLOGS.find((post) => post.slug === slug)

@@ -8,21 +8,32 @@ export type SeoMediaItem = {
   videoDescription?: string
 }
 
-/** Self-hosted hero background loop for home and forums. */
-export const WARDOGS_HERO_VIDEO = '/videos/hero video.webm'
+/** Self-hosted hero background loop for home, forums, and store card. */
+export const WARDOGS_HERO_VIDEO = '/videos/final.mp4'
 
-/** Still frame from the hero video. */
+/** Still frame from the hero video (1920×1080 source). */
 export const WARDOGS_POSTER = '/media/wardogs-poster.jpg'
 
-/** Product cover art from IGN (square WARDOGS key art). */
+export function heroVideoMimeType(src: string) {
+  return src.endsWith('.webm') ? 'video/webm' : 'video/mp4'
+}
+
+/** Product cover from primary user-provided gameplay still. */
 export const WARDOGS_COVER = '/media/wardogs-cover.webp'
 /** Display-sized store card — 800x800. */
 export const WARDOGS_COVER_CARD = '/media/wardogs-cover-card.webp'
 
-/** On-page gallery stills for WARDOGS. */
-export const IMAGE_1 = '/media/image-1.webp'
-export const IMAGE_2 = '/media/image-2.webp'
-export const IMAGE_3 = '/media/image-3.webp'
+/** User-provided gameplay gallery (full resolution WebP, no downscale). */
+export const GAMEPLAY_IMAGE_COUNT = 13
+
+export function gameplayImagePath(index: number) {
+  const n = Math.min(Math.max(1, index), GAMEPLAY_IMAGE_COUNT)
+  return `/media/image-${n}.webp`
+}
+
+export const IMAGE_1 = gameplayImagePath(1)
+export const IMAGE_2 = gameplayImagePath(2)
+export const IMAGE_3 = gameplayImagePath(3)
 
 export type HomeGameplayScreenshot = {
   image: string
@@ -30,24 +41,73 @@ export type HomeGameplayScreenshot = {
   title: string
 }
 
-/** Homepage in-game screenshot gallery. */
-export const HOME_GAMEPLAY_SCREENSHOTS: HomeGameplayScreenshot[] = [
+const gameplayCaptions: Omit<HomeGameplayScreenshot, 'image'>[] = [
   {
-    image: IMAGE_1,
-    alt: 'WARDOGS in-game ESP and aimbot overlay screenshot',
-    title: 'WARDOGS ESP and aimbot screenshot',
+    alt: 'WARDOGS wallhack ESP with enemy wireframe through concrete',
+    title: 'Wallhack ESP through cover',
   },
   {
-    image: IMAGE_2,
-    alt: 'WARDOGS stairwell fight with player ESP marker',
-    title: 'WARDOGS player ESP screenshot',
+    alt: 'WARDOGS player silhouette ESP inside a damaged building',
+    title: 'Silhouette ESP in CQB',
   },
   {
-    image: IMAGE_3,
-    alt: 'WARDOGS control zone with radar and vehicle markers',
-    title: 'WARDOGS radar screenshot',
+    alt: 'WARDOGS skeleton ESP with boxes and aim FOV on stairs',
+    title: 'Skeleton ESP on stair pushes',
+  },
+  {
+    alt: 'WARDOGS scoped skeleton ESP with distance markers outdoors',
+    title: 'Scoped skeleton ESP',
+  },
+  {
+    alt: 'WARDOGS industrial map with skeleton ESP and minimap radar',
+    title: 'Outdoor skeleton ESP and radar',
+  },
+  {
+    alt: 'WARDOGS green skeleton ESP through fence with loot prompts',
+    title: 'Line-of-sight skeleton ESP',
+  },
+  {
+    alt: 'WARDOGS bounding boxes and skeletons through building corners',
+    title: 'Box ESP through corners',
+  },
+  {
+    alt: 'WARDOGS kill confirmed with ESP marker through debris',
+    title: 'Combat ESP markers',
+  },
+  {
+    alt: 'WARDOGS third-person distance ESP and nearby player list',
+    title: 'Distance ESP panel',
+  },
+  {
+    alt: 'WARDOGS doorway fight with skeleton ESP and range tags',
+    title: 'Doorway hold ESP',
+  },
+  {
+    alt: 'WARDOGS global ESP labels and tactical minimap',
+    title: 'Global ESP tags',
+  },
+  {
+    alt: 'WARDOGS interior hallway ESP with entity distances',
+    title: 'Interior ESP readouts',
+  },
+  {
+    alt: 'WARDOGS tiled room with blue skeleton wallhack and radar',
+    title: 'Wallhack skeletons with radar',
   },
 ]
+
+/** Six distinct stills on the homepage (full gallery remains in data for forums/product). */
+const HOME_GALLERY_INDICES = [1, 3, 5, 7, 9, 13] as const
+
+export const HOME_GAMEPLAY_SCREENSHOTS: HomeGameplayScreenshot[] = HOME_GALLERY_INDICES.map(
+  (index) => {
+    const item = gameplayCaptions[index - 1]
+    return {
+      ...item,
+      image: gameplayImagePath(index),
+    }
+  },
+)
 
 export const PAGE_MEDIA = {
   home: {
@@ -64,15 +124,15 @@ export const PAGE_MEDIA = {
   },
   product: {
     image: WARDOGS_COVER_CARD,
-    alt: 'WARDOGS official cover art — soldier with rifle and WARDOGS logo',
+    alt: 'WARDOGS store card with looping gameplay preview video',
     title: 'WARDOGS Aimbot, ESP and Radar',
-    caption: 'Official WARDOGS cover art for the store card on cheatsforwardogs.org.',
+    caption: 'Store card and in-match previews on cheatforwardogs.org.',
   },
   forums: {
     image: IMAGE_1,
     alt: 'Wardogs cheats product artwork',
     title: 'Wardogs Intel',
-    caption: 'Reference for setup, aimbot, ESP, radar, and Elytra status articles.',
+    caption: 'Reference for setup, aimbot, ESP, radar, and cheat status articles.',
   },
   reviews: {
     image: IMAGE_2,
@@ -94,63 +154,37 @@ export const PAGE_MEDIA = {
   },
 } as const satisfies Record<string, SeoMediaItem>
 
-const FORUM_MEDIA: Record<string, SeoMediaItem> = {
-  'wardogs-cheats': {
-    image: IMAGE_1,
-    alt: 'WARDOGS control zone with player, vehicle, and radar overlay information',
-    title: 'Ultimate WARDOGS Guide',
-    caption: 'A practical overview of visual information, aim controls, radar, and zone planning.',
-  },
-  'wardogs-dma': {
-    image: IMAGE_2,
-    alt: 'WARDOGS cloud DMA data flow from local PCIe hardware to remote processing',
-    title: 'How WARDOGS Cloud DMA Works',
-    caption: 'Local DMA hardware, remote processing, latency, connectivity, compatibility, and detection limits.',
-  },
-  'wardogs-anti-cheat': {
-    image: IMAGE_3,
-    alt: 'WARDOGS Elytra status labels for Clear and Updating on Windows PC',
-    title: 'Wardogs Anti Cheat Elytra Guide',
-    caption: 'How Elytra status works after WARDOGS patches and when to wait before loading.',
-  },
-  'wardogs-2d-radar': {
-    image: IMAGE_1,
-    alt: 'WARDOGS 2D radar with player markers, vehicle markers, and range controls',
-    title: 'WARDOGS 2D Radar Map',
-    caption: 'Player markers, vehicle markers, and radar range for clear tactical awareness.',
-  },
-  'wardogs-cheats-review': {
-    image: IMAGE_2,
-    alt: 'WARDOGS overlay used for a 2026 feature and value comparison',
-    title: 'WARDOGS Cheats Review 2026',
-    caption: '2026 comparison of ESP, aim, radar, Elytra status, support, pricing, and value.',
-  },
-  'wardogs-hwid-spoofer': {
-    image: IMAGE_3,
-    alt: 'Windows PC gameplay image accompanying an HWID spoofer identifier guide',
-    title: 'What an HWID Spoofer Does',
-    caption: 'A guide to hardware identifiers, temporary changes, compatibility, and reset behavior.',
-  },
-  'wardogs-esp': {
-    image: IMAGE_1,
-    alt: 'WARDOGS player, skeleton, health, weapon, and vehicle ESP overlay',
-    title: 'WARDOGS ESP Map Awareness',
-    caption: 'Box, skeleton, health, distance, weapon, and vehicle ESP guide.',
-  },
-  'wardogs-aimbot': {
-    image: IMAGE_2,
-    alt: 'WARDOGS aimbot FOV and target selection configuration',
-    title: 'WARDOGS Precision Aimbot',
-    caption: 'Guide to enable aimbot, FOV, smoothness, and target selection for WARDOGS.',
-  },
-  'wardogs-no-recoil': {
-    image: IMAGE_3,
-    alt: 'WARDOGS weapon no recoil and no spread configuration',
-    title: 'WARDOGS No Recoil and No Spread',
-    caption: 'Guide to recoil flattening, spread control, and weapon testing on WARDOGS.',
-  },
-}
+const forumSlugs = [
+  'wardogs-cheats',
+  'wardogs-dma',
+  'wardogs-anti-cheat',
+  'wardogs-2d-radar',
+  'wardogs-cheats-review',
+  'wardogs-hwid-spoofer',
+  'wardogs-esp',
+  'wardogs-aimbot',
+  'wardogs-no-recoil',
+] as const
+
+const FORUM_MEDIA: Record<string, SeoMediaItem> = Object.fromEntries(
+  forumSlugs.map((slug, i) => {
+    const item = gameplayCaptions[i % gameplayCaptions.length]
+    return [
+      slug,
+      {
+        image: gameplayImagePath(i + 1),
+        alt: item.alt,
+        title: item.title,
+        caption: item.title,
+      },
+    ]
+  }),
+)
 
 export function getForumMedia(slug: string): SeoMediaItem {
   return FORUM_MEDIA[slug] || PAGE_MEDIA.forums
+}
+
+export function allGameplayImages() {
+  return Array.from({ length: GAMEPLAY_IMAGE_COUNT }, (_, i) => gameplayImagePath(i + 1))
 }

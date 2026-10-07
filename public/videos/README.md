@@ -1,5 +1,4 @@
-ï»¿# Videos
+# Self-hosted video
 
-Self-hosted WARDOGS media:
-- `/videos/hero video.webm` â€” homepage and forums hero background
-- `/media/wardogs-poster.jpg` â€” hero video poster frame
+- `/videos/final.mp4` — hero loop for homepage, forums header, and store card
+- `/media/wardogs-poster.jpg` — poster frame extracted from the hero video

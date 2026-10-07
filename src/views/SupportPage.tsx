@@ -114,7 +114,7 @@ export function SupportPage() {
                 Need help now?
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/50">
-                Confirm Elytra status on the store page, or open Discord if you already
+                Confirm cheat status on the store page, or open Discord if you already
                 have an order.
               </p>
             </div>

@@ -9,7 +9,7 @@ import {
   absoluteUrl,
   type PageSeo,
 } from '../data/site'
-import { WARDOGS_COVER_CARD, getForumMedia } from '../data/media'
+import { WARDOGS_HERO_VIDEO, WARDOGS_POSTER, getForumMedia } from '../data/media'
 import { buildPageJsonLd } from '../lib/seo'
 
 type Props = {
@@ -42,14 +42,14 @@ const jsonLd = buildPageJsonLd(seo, jsonLdExtra)
 const forumSlug = seo.path.match(/^\/forums\/([^/]+)$/)?.[1]
 const forumStill = forumSlug ? getForumMedia(forumSlug).image : ''
 const preloadLcp =
-  seo.path === '/wardogs-cheats'
-    ? { href: WARDOGS_COVER_CARD, type: 'image/webp' }
+  seo.path === '/' || seo.path === '/forums' || seo.path === '/wardogs-cheats'
+    ? { href: WARDOGS_HERO_VIDEO, type: 'video/mp4', as: 'video' as const }
     : forumStill
       ? {
           href: forumStill,
           type: forumStill.endsWith('.webp') ? 'image/webp' : 'image/jpeg',
         }
-      : null
+      : { href: WARDOGS_POSTER, type: 'image/jpeg' }
 ---
 
 <!doctype html>
@@ -67,7 +67,13 @@ const preloadLcp =
     <link rel="apple-touch-icon" sizes="180x180" href={BRAND_APPLE_TOUCH_ICON} />
 
     {preloadLcp ? (
-      <link rel="preload" as="image" href={preloadLcp.href} type={preloadLcp.type} fetchpriority="high" />
+      <link
+        rel="preload"
+        as={'as' in preloadLcp ? preloadLcp.as : 'image'}
+        href={preloadLcp.href}
+        type={preloadLcp.type}
+        fetchpriority="high"
+      />
     ) : null}
 
     <title>{seo.title}</title>
@@ -116,19 +122,23 @@ const preloadLcp =
     <div id="main">
       <slot />
     </div>
+    <script>
+      import '../scripts/smooth-scroll.ts'
+    </script>
     <script is:inline>
       (function () {
-        var v = document.getElementById('hero-bg-video')
-        if (!v) return
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-        function show() {
-          v.style.opacity = '1'
-        }
-        v.addEventListener('playing', show, { once: true })
-        v.addEventListener('loadeddata', show, { once: true })
-        if (v.readyState >= 2) show()
-        var p = v.play()
-        if (p && p.catch) p.catch(function () {})
+        var nodes = document.querySelectorAll('[data-hero-loop-video]')
+        nodes.forEach(function (v) {
+          function show() {
+            v.style.opacity = '1'
+          }
+          v.addEventListener('playing', show, { once: true })
+          v.addEventListener('loadeddata', show, { once: true })
+          if (v.readyState >= 2) show()
+          var p = v.play()
+          if (p && p.catch) p.catch(function () {})
+        })
       })()
     </script>
   </body>

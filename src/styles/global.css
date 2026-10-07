@@ -48,9 +48,34 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+html.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 body:has(#nav-menu:checked) {
@@ -77,6 +102,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
   background:
     radial-gradient(ellipse 90% 55% at 15% -10%, rgba(176, 64, 251, 0.22), transparent 55%),
     radial-gradient(ellipse 70% 45% at 90% 5%, rgba(124, 58, 237, 0.14), transparent 50%),

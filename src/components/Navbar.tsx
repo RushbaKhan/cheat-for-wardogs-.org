@@ -1,12 +1,11 @@
 import { Menu, X } from 'lucide-react'
-import { LogoMark } from './LogoMark'
 import { CheckoutLink } from './CheckoutLink'
 import { PRODUCT_PATH, SITE_NAME } from '../data/site'
 
 /** Lean nav — Reviews stay in footer. */
 const NAV_LINKS = [
   { label: 'Forums', to: '/forums' },
-  { label: 'Store', to: PRODUCT_PATH },
+  { label: 'Products', to: PRODUCT_PATH },
   { label: 'Reviews', to: '/reviews' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Support', to: '/support' },
@@ -22,8 +21,7 @@ export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
 
   return (
     <nav className="page-x relative z-[80] flex items-center justify-between gap-3 py-4 sm:py-5">
-      <a href="/" className="flex min-w-0 items-center gap-2">
-        <LogoMark className="shrink-0" priority />
+      <a href="/" className="flex min-w-0 items-center">
         <span className={`truncate text-sm font-semibold tracking-tight sm:text-base ${brandClass}`}>
           {SITE_NAME}
         </span>
@@ -61,7 +59,10 @@ export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
         className="fixed inset-0 z-[70] hidden bg-[#08060f] peer-checked:block md:hidden"
         aria-hidden="true"
       />
-      <div className="fixed inset-y-0 right-0 z-[80] flex h-[100dvh] w-[min(18rem,100%)] translate-x-full flex-col overflow-y-auto border-l border-z-soft/20 bg-[#0c0a1a] transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] peer-checked:translate-x-0 md:hidden">
+      <div
+        data-lenis-prevent
+        className="fixed inset-y-0 right-0 z-[80] flex h-[100dvh] w-[min(18rem,100%)] translate-x-full flex-col overflow-y-auto border-l border-z-soft/20 bg-[#0c0a1a] transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] peer-checked:translate-x-0 md:hidden"
+      >
         <div className="flex flex-col gap-1 px-5 pt-24">
           <a
             href="/"

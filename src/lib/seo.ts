@@ -17,7 +17,7 @@ import {
 } from '../data/site'
 import { getReviewsAggregate, REVIEWS } from '../data/reviews'
 import type { GameStatus } from '../data/games'
-import { WARDOGS_COVER, IMAGE_1, IMAGE_2, PAGE_MEDIA } from '../data/media'
+import { WARDOGS_COVER, allGameplayImages, PAGE_MEDIA } from '../data/media'
 
 export const PRODUCT_ID = `${SITE_URL}/#product`
 
@@ -73,7 +73,7 @@ export function siteIdentityGraph() {
         '@type': 'Thing',
         name: 'Wardogs cheats',
         description:
-          'Commercial Wardogs cheats for PC — aimbot, ESP, 2D radar, no recoil, and no spread with Elytra status.',
+          'Commercial WARDOGS cheats for PC � aimbot, silent aim, triggerbot, ESP, item ESP, and 2D/3D radar with live cheat status.',
       },
       publisher: { '@id': `${SITE_URL}/#organization` },
     },
@@ -122,8 +122,7 @@ export function productCoreJsonLd() {
       absoluteAsset('/og/home.jpg'),
       absoluteAsset(WARDOGS_COVER),
       absoluteAsset(PAGE_MEDIA.home.image),
-      absoluteAsset(IMAGE_1),
-      absoluteAsset(IMAGE_2),
+      ...allGameplayImages().map((path) => absoluteAsset(path)),
     ],
     brand: { '@type': 'Brand', name: SITE_NAME },
     manufacturer: { '@id': `${SITE_URL}/#organization` },
@@ -152,7 +151,7 @@ export function productDetailJsonLd(status: GameStatus) {
         '@type': 'PropertyValue',
         name: 'Features',
         value:
-          'Aimbot, FOV, box ESP, skeleton ESP, health ESP, distance ESP, weapon ESP, vehicle ESP, 2D radar, no recoil, and no spread',
+          'Aimbot, aim assist, silent aim, triggerbot, player ESP, box ESP, skeleton ESP, health ESP, name ESP, distance ESP, class ESP, item ESP, pickup ESP, 2D radar, and 3D radar',
       },
       { '@type': 'PropertyValue', name: 'Anti-cheat', value: ANTI_CHEAT },
       { '@type': 'PropertyValue', name: 'Market', value: 'Worldwide' },

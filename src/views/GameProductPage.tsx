@@ -1,7 +1,8 @@
 import { Check, Shield } from 'lucide-react'
 import { Navbar } from '../components/Navbar'
 import { SiteFooter } from '../components/SiteFooter'
-import { GameCover } from '../components/GameCover'
+import { BoardPageHero } from '../components/BoardPageHero'
+import { LoopingHeroVideo } from '../components/LoopingHeroVideo'
 import {
   FEATURE_GROUPS,
   getGame,
@@ -15,19 +16,16 @@ import { FaqSection } from '../components/FaqSection'
 import { CheckoutLink } from '../components/CheckoutLink'
 import { NotFoundPage } from './NotFoundPage'
 import { blogPath } from '../data/blogs'
-import { IMAGE_1, IMAGE_2, PAGE_MEDIA } from '../data/media'
+import { IMAGE_1, IMAGE_2, IMAGE_3, PAGE_MEDIA } from '../data/media'
 
 function ProductPurchaseCard({ game }: { game: Game }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-z-soft/15 bg-[rgba(20,16,31,0.95)] sm:rounded-3xl">
       <CheckoutLink className="block" aria-label={`Buy ${SITE_NAME}`}>
-        <GameCover
-          slug={game.slug}
-          name={game.name}
-          aspect="square"
-          variant="product"
-          className="rounded-none"
-        />
+        <div className="relative aspect-square overflow-hidden bg-black">
+          <LoopingHeroVideo variant="card" label={`${game.name} store preview video`} />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/10" />
+        </div>
       </CheckoutLink>
       <div className="p-5 sm:p-6">
         <div className="min-w-0">
@@ -69,40 +67,84 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
 
   if (!game) return <NotFoundPage />
 
+  const featureCount = FEATURE_GROUPS.reduce((n, g) => n + g.items.length, 0)
+
   return (
     <div className="content-surface min-h-screen overflow-x-hidden text-white">
-      <div className="content-surface-nav">
+      <div className="content-surface-nav border-b border-white/5">
         <Navbar />
       </div>
 
+      <BoardPageHero
+        badge="Licensed product"
+        eyebrow={`Products · ${SITE_HOST}`}
+        title={SEO.product.title.split(' | ')[0]}
+        description={`${SITE_NAME} for ${GAME_NAME} on Windows PC — aimbot, ESP, and radar with live ${ANTI_CHEAT} status. Monthly $${PRODUCT_PLANS[0].price}, lifetime $${PRODUCT_PLANS[1].price}. Confirm status before checkout.`}
+      />
+
       <main>
-        <section className="page-x py-8 sm:py-12">
+        <section className="page-x py-8 sm:py-10">
           <div className="mx-auto max-w-6xl">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { label: 'Status', value: game.status },
+                { label: 'Plans', value: '2' },
+                { label: 'Feature toggles', value: String(featureCount) },
+                { label: 'Delivery', value: 'Digital' },
+              ].map(({ label, value }) => (
+                <div
+                  key={label}
+                  className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3"
+                >
+                  <p className="text-[11px] font-medium uppercase tracking-wider text-white/45">
+                    {label}
+                  </p>
+                  <p className="mt-1 text-lg font-semibold text-white">{value}</p>
+                </div>
+              ))}
+            </div>
+
+            <aside className="page-card mt-6 flex flex-col gap-3 rounded-2xl border border-white/10 p-5 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-white/45">
+                  Guide board
+                </p>
+                <p className="mt-1 text-sm text-white/55">
+                  Setup threads and patch-day notes live on the forums. Status and checkout stay
+                  here.
+                </p>
+              </div>
+              <a
+                href="/forums"
+                className="inline-flex shrink-0 items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-semibold text-white hover:bg-white/5"
+              >
+                Open forums →
+              </a>
+            </aside>
+
             <nav
-              className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-white/40"
+              className="mt-8 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-white/40"
               aria-label="Breadcrumb"
             >
               <a href="/" className="shrink-0 hover:text-white/70">
                 Home
               </a>
               <span className="shrink-0">/</span>
-              <span className="min-w-0 text-white/70">Product details</span>
+              <span className="min-w-0 text-white/70">Products</span>
             </nav>
 
-            <div className="mt-6 grid gap-8 lg:mt-8 lg:grid-cols-12 lg:items-start lg:gap-10">
+            <div className="mt-6 grid gap-8 lg:grid-cols-12 lg:items-start lg:gap-10">
               <div className="lg:col-span-7">
                 <span className="inline-flex items-center gap-1.5 text-xs text-z-soft">
                   <Shield className="h-3.5 w-3.5 shrink-0" strokeWidth={1.75} />
-                  {game.status} · {GAME_NAME} · {ANTI_CHEAT} · {SITE_HOST}
+                  {game.status} · {GAME_NAME} · {ANTI_CHEAT}
                 </span>
 
-                <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-                  {SEO.product.title.split(' | ')[0]}
-                </h1>
-                <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55 sm:mt-4 sm:text-base">
-                  Aimbot, ESP, 2D radar, no recoil, and no spread for {GAME_NAME} on Windows PC. Monthly
-                  is ${PRODUCT_PLANS[0].price}. Lifetime is ${PRODUCT_PLANS[1].price}. Confirm{' '}
-                  {ANTI_CHEAT} status, then checkout.
+                <h2 className="mt-3 text-xl font-semibold tracking-tight text-white sm:text-2xl">
+                  Feature breakdown
+                </h2>
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-white/55">
+                  Grouped the way the menu is organized — enable only what your role needs.
                 </p>
 
                 <div className="mt-6 lg:hidden">
@@ -175,31 +217,21 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                       {SEO.preview.title.split(' | ')[0]}
                     </h2>
                   <p className="mt-2 text-sm text-white/45">{PAGE_MEDIA.product.caption}</p>
-                  <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                    <figure className="page-card overflow-hidden rounded-2xl">
-                      <img
-                        src={IMAGE_1}
-                        alt="Wardogs cheats ESP and aimbot in-game preview"
-                        title="WARDOGS ESP and aimbot"
-                        width={480}
-                        height={270}
-                        loading="lazy"
-                        decoding="async"
-                        className="aspect-video w-full object-cover"
-                      />
-                    </figure>
-                    <figure className="page-card overflow-hidden rounded-2xl">
-                      <img
-                        src={IMAGE_2}
-                        alt="Wardogs cheats radar and menu in-game preview"
-                        title="WARDOGS radar and menu"
-                        width={480}
-                        height={290}
-                        loading="lazy"
-                        decoding="async"
-                        className="aspect-video w-full object-cover"
-                      />
-                    </figure>
+                  <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {[IMAGE_1, IMAGE_2, IMAGE_3].map((src, i) => (
+                      <figure key={src} className="page-card overflow-hidden rounded-2xl">
+                        <img
+                          src={src}
+                          alt={`Wardogs cheats in-game preview ${i + 1}`}
+                          title={`WARDOGS preview ${i + 1}`}
+                          width={1024}
+                          height={576}
+                          loading="lazy"
+                          decoding="async"
+                          className="aspect-video w-full object-cover object-center"
+                        />
+                      </figure>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -214,7 +246,7 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
         </section>
 
         <FaqSection
-          heading="Wardogs store FAQ"
+          heading={{ lead: 'Products', accent: 'FAQ' }}
           intro="Status, ESP, aimbot, radar, plans, delivery, and load questions before checkout."
           items={PRODUCT_PAGE_FAQS}
         />

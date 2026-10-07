@@ -13,35 +13,36 @@ import { HOME_FAQS } from '../data/faqs'
 import {
   GAME_NAME,
   GAME_SLUG,
+  HOME_FAQ_HEADING,
   HOME_HEADINGS,
   PRODUCT_PATH,
   SITE_HOST,
   SITE_NAME,
   SITE_PURPOSE,
 } from '../data/site'
-import { BLOGS, blogPath } from '../data/blogs'
+import { BLOGS, blogPath, homeIntelCardTitle } from '../data/blogs'
 import { PAGE_MEDIA } from '../data/media'
 
 const FEATURES = [
   {
     icon: Eye,
     label: 'ESP',
-    desc: 'Box, skeleton, health, distance, weapon, and vehicle ESP through the control zone.',
+    desc: 'Player, box, skeleton, health, class, item, and pickup ESP with team check filters.',
   },
   {
     icon: Crosshair,
     label: 'Aimbot',
-    desc: 'Optional aim assist with FOV for WARDOGS. Leave it off if you only want ESP and radar.',
+    desc: 'Aimbot, aim assist, silent aim, and triggerbot — enable only what you need for each fight.',
   },
   {
     icon: Radar,
-    label: '2D radar',
-    desc: 'Player and vehicle markers with adjustable radar range for rotations into the zone.',
+    label: 'Radar',
+    desc: '2D and 3D radar so rotations, ridges, and control-zone pushes stay readable.',
   },
   {
     icon: Shield,
-    label: 'Elytra status',
-    desc: 'Live Elytra status after WARDOGS patches — clear to load, or wait.',
+    label: 'Cheat status',
+    desc: 'Live compatibility status after WARDOGS and EAC patches — clear to load, or wait.',
   },
 ] as const
 
@@ -66,13 +67,13 @@ export function HomePage() {
                   className="text-[1.75rem] font-semibold leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.65rem] lg:leading-[1.1]"
                 />
                 <p className="mt-3 max-w-md text-sm leading-relaxed text-white/70 sm:mt-3.5 sm:text-[0.95rem]">
-                  Wardogs cheats for Windows PC — aimbot, ESP, and 2D radar, with live Elytra
-                  status.
+                  Wardogs Cheats for Windows PC — aimbot, ESP, and 2D/3D radar, with live cheat
+                  status after EAC updates.
                 </p>
 
                 <div className="relative z-50 mt-5 flex flex-col gap-2.5 sm:flex-row sm:items-center">
                   <CheckoutLink className="cta-gradient inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90">
-                    Buy Wardogs cheats
+                    Buy Wardogs Cheats
                   </CheckoutLink>
                   <a
                     href={guidePath(GAME_SLUG)}
@@ -89,10 +90,10 @@ export function HomePage() {
                     className="status-pill text-2xl font-normal tracking-tight sm:text-3xl"
                     style={{ fontFamily: "'Silkscreen', cursive" }}
                   >
-                    Elytra
+                    EAC
                   </p>
                   <p className="mt-2.5 text-xs leading-relaxed text-white/70 sm:mt-3 sm:text-sm">
-                    Live Elytra status for WARDOGS. Updated after patches.
+                    Live cheat status for WARDOGS with Easy Anti-Cheat. Updated after patches.
                   </p>
                 </div>
 
@@ -101,7 +102,7 @@ export function HomePage() {
                     <span className="text-sm font-semibold text-white">{GAME_NAME}</span>
                   </div>
                   <p className="flex-1 text-xs leading-relaxed text-white/80 sm:text-sm">
-                    “Bought it for vehicle ESP and radar. Status stayed honest after the last Elytra
+                    “Bought it for item ESP and 3D radar. Status stayed honest after the last EAC
                     update.”
                   </p>
                   <div className="mt-3 flex items-center gap-2.5 sm:mt-4 sm:gap-3">
@@ -128,8 +129,11 @@ export function HomePage() {
             <TwoToneHeading
               as="h2"
               {...HOME_HEADINGS.h2Features}
-              className="mb-6 text-xl font-semibold tracking-tight sm:text-2xl"
+              className="text-xl font-semibold tracking-tight sm:text-2xl"
             />
+            <p className="mb-6 mt-2 max-w-2xl text-sm text-white/55 sm:text-base">
+              Same groupings you will see in the menu and on the products page.
+            </p>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {FEATURES.map(({ icon: Icon, label, desc }) => (
                 <div
@@ -162,10 +166,10 @@ export function HomePage() {
               </p>
               <p className="mt-4 text-sm leading-relaxed text-white/55 sm:text-base">
                 <strong className="font-semibold text-white/80">Player ESP</strong>,{' '}
-                <strong className="font-semibold text-white/80">vehicle ESP</strong>,{' '}
-                <strong className="font-semibold text-white/80">2D radar</strong>, aimbot, no recoil,
-                and no spread each solve a different problem. A tighter setup with a few reliable
-                labels usually beats turning on every toggle at once.
+                <strong className="font-semibold text-white/80">item ESP</strong>,{' '}
+                <strong className="font-semibold text-white/80">2D/3D radar</strong>, silent aim, and
+                triggerbot each solve a different problem. A tighter setup with a few reliable labels
+                usually beats turning on every toggle at once.
               </p>
               <p className="mt-5 text-sm leading-relaxed text-white/55 sm:text-base">
                 Read the{' '}
@@ -212,7 +216,7 @@ export function HomePage() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/45">
-                  Forums
+                  Intel
                 </p>
                 <TwoToneHeading
                   as="h2"
@@ -220,8 +224,8 @@ export function HomePage() {
                   className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl"
                 />
                 <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55 sm:text-base">
-                  Setup library for ESP, aimbot, 2D radar, Elytra status, and loader fixes
-                  before you buy.
+                  Read-only threads for menu tuning, EAC status, and loader fixes — saved here, not
+                  live chat.
                 </p>
               </div>
               <a
@@ -242,7 +246,7 @@ export function HomePage() {
                 >
                   <p className="text-xs uppercase tracking-wider text-white/45">{post.tag}</p>
                   <p className="mt-2 text-lg font-semibold tracking-tight text-white">
-                    {post.title}
+                    {homeIntelCardTitle(post.slug, post.title)}
                   </p>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-white/55">
                     {post.excerpt}
@@ -266,14 +270,14 @@ export function HomePage() {
                   className="text-lg font-semibold"
                 />
                 <p className="mt-1 text-sm text-white/55">
-                  Features · Elytra status · monthly $35 · lifetime $150
+                  Features · cheat status · monthly $35 · lifetime $150
                 </p>
               </div>
               <a
                 href={guidePath(GAME_SLUG)}
                 className="cta-gradient inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-white"
               >
-                View product details
+                Open products page
               </a>
             </div>
           </div>
@@ -315,7 +319,7 @@ export function HomePage() {
                 href={guidePath(GAME_SLUG)}
                 className="mt-8 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-white hover:text-white/80"
               >
-                See the store
+                Open products page
                 <ArrowRight className="h-4 w-4" strokeWidth={1.75} />
               </a>
             </div>
@@ -334,7 +338,7 @@ export function HomePage() {
                   className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl"
                 />
                 <p className="mt-4 text-sm leading-relaxed text-white/55 sm:text-base">
-                  Confirm Elytra status is clear to load, then checkout. Monthly is $35.
+                  Confirm cheat status is clear to load, then checkout. Monthly is $35.
                   Lifetime is $150. Delivery is digital, worldwide, on Windows PC.
                 </p>
               </div>
@@ -347,8 +351,8 @@ export function HomePage() {
 
         <FaqSection
           id="faq"
-          heading={HOME_HEADINGS.h2Faq}
-          intro="Elytra status, ESP, aimbot, 2D radar, delivery, and checkout — before you buy."
+          heading={HOME_FAQ_HEADING}
+          intro="Cheat status, ESP, aimbot, radar, delivery, and checkout — before you buy."
           items={HOME_FAQS}
           moreHref="/faq"
           moreLabel="Full FAQ →"

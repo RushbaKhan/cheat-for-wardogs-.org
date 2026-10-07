@@ -1,4 +1,4 @@
-﻿import { SITE_HOST, SUPPORT_DISCORD_URL } from './site'
+import { SITE_HOST, SUPPORT_DISCORD_URL } from './site'
 
 export type SupportTopic = {
   heading: string
@@ -11,14 +11,14 @@ export type SupportFaq = {
 }
 
 export const SUPPORT_INTRO =
-  'Support for Wardogs cheats buyers on cheatsforwardogs.org — loader setup, Elytra status, menu config, and delivery help after you purchase.'
+  'Support for Wardogs Cheats buyers on cheatforwardogs.org — loader setup, cheat status, menu config, and delivery help after you purchase.'
 
 export const SUPPORT_TOPICS: SupportTopic[] = [
   {
     heading: 'Status before you load',
     body: [
       'Check live status on the store page. If it says Updating, do not load. Wait until it is clear to load again.',
-      'Elytra and client patches can invalidate yesterday’s build. Status honesty matters more than rushing a control-zone fight.',
+      'EAC and client patches can invalidate yesterday’s build. Status honesty matters more than rushing a control-zone fight.',
     ],
   },
   {

@@ -30,41 +30,69 @@ export const FEATURE_GROUPS = [
     name: 'Aimbot Options',
     items: [
       {
-        name: 'Enable Aimbot',
-        text: 'Optional aim assist for WARDOGS on Windows PC. Leave it off if you only want ESP and radar.',
+        name: 'Aimbot',
+        text: 'Optional target assistance for WARDOGS on Windows PC. Leave it off if you only want ESP and radar.',
       },
       {
-        name: 'FOV',
-        text: 'Set the aim field of view so target selection stays near your crosshair instead of snapping across the control zone.',
+        name: 'Aim Assist',
+        text: 'Light pull toward valid targets so you can stay on point without a full lock.',
+      },
+      {
+        name: 'Silent Aim',
+        text: 'Adjust aim on your client while the crosshair stays still — pair with conservative FOV for natural movement.',
+      },
+      {
+        name: 'Triggerbot',
+        text: 'Fire when your crosshair crosses a valid target. Useful for holding angles with minimal extra input.',
       },
     ],
   },
   {
-    name: 'Player Visual Options',
+    name: 'ESP Options',
     items: [
       {
+        name: 'Player ESP',
+        text: 'Highlight enemy and friendly players through cover so you can read fights before you peek.',
+      },
+      {
         name: 'Box ESP',
-        text: 'Draw boxes on players through cover so you can read position before you peek a ridge or building.',
+        text: 'Draw boxes on players for quick position reads around the control zone.',
       },
       {
         name: 'Skeleton ESP',
-        text: 'Show player skeletons so stance, facing, and movement stay readable at mid range.',
+        text: 'Show skeletons so stance, facing, and movement stay readable at mid range.',
       },
       {
         name: 'Health ESP',
         text: 'Display remaining health on the overlay so you know who is already weakened.',
       },
       {
+        name: 'Name ESP',
+        text: 'Show player names on markers when you need to track specific contacts in a busy fight.',
+      },
+      {
         name: 'Distance ESP',
         text: 'Show distance on player markers so you can pick fights that match your weapon and radar range.',
       },
       {
-        name: 'Weapon ESP',
-        text: 'Read enemy loadouts on the overlay before you commit to a push.',
+        name: 'Class ESP',
+        text: 'Read enemy roles or loadout class on the overlay before you commit to a push.',
       },
       {
-        name: 'Vehicle ESP',
-        text: 'Mark vehicles through terrain so transports and armor are visible before they reach the control zone.',
+        name: 'Team Check',
+        text: 'Filter markers by team or squad so friendly icons do not clutter your read.',
+      },
+      {
+        name: 'Enemy Only ESP',
+        text: 'Limit player visuals to enemies only when you already know friendly positions.',
+      },
+      {
+        name: 'Item ESP',
+        text: 'Mark weapons, gear, and loot on the map layer so you can route to high-value pickups.',
+      },
+      {
+        name: 'Pickup ESP',
+        text: 'Highlight interactable pickups and cash sources during rotations into the zone.',
       },
     ],
   },
@@ -76,29 +104,8 @@ export const FEATURE_GROUPS = [
         text: 'Keep a top-down 2D radar on screen so team fights around the control zone stay readable.',
       },
       {
-        name: 'Player Markers',
-        text: 'Plot player markers on the radar so you can track rotations without staring at the full map.',
-      },
-      {
-        name: 'Vehicle Markers',
-        text: 'Show vehicle markers on the radar so logistics and armor movement are easier to call.',
-      },
-      {
-        name: 'Radar Range',
-        text: 'Adjust radar range so nearby threats stay clear without flooding the overlay with distant noise.',
-      },
-    ],
-  },
-  {
-    name: 'Other',
-    items: [
-      {
-        name: 'No Recoil',
-        text: 'Flatten weapon climb so full-auto sprays stay on target during close and mid-range fights.',
-      },
-      {
-        name: 'No Spread',
-        text: 'Tighten bullet spread so follow-up shots stay grouped on the point you are holding.',
+        name: '3D Radar',
+        text: 'Plot height and distance in a 3D radar view when ridges and multi-floor compounds matter.',
       },
     ],
   },

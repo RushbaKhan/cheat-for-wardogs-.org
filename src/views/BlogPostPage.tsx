@@ -109,7 +109,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
                 Ready for {SITE_NAME}?
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-white/55">
-                Check live Elytra status, then buy ESP, aimbot, and 2D radar for {GAME_NAME}
+                Check live cheat status, then buy ESP, aimbot, and 2D radar for {GAME_NAME}
                 on {SITE_HOST}. Need help? Read{' '}
                 <a href="/support" className="text-white/80 underline-offset-2 hover:underline">
                   support

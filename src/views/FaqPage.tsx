@@ -22,7 +22,7 @@ export function FaqPage() {
               {SEO.faq.title.split(' | ')[0]}
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">
-              Elytra status, ESP, aimbot, 2D radar, plans, loading, Discord support, and
+              cheat status, ESP, aimbot, 2D radar, plans, loading, Discord support, and
               refunds — straight answers before you checkout.
             </p>
           </div>
@@ -64,7 +64,7 @@ export function FaqPage() {
                 Still need help?
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/50">
-                Open Discord for load help, or buy when Elytra status is clear.
+                Open Discord for load help, or buy when cheat status is clear.
               </p>
             </div>
             <div className="flex shrink-0 flex-wrap items-center gap-3">

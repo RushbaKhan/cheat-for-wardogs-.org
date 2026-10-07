@@ -4,345 +4,440 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://cheatsforwardogs.org/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/home.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/home.jpg</image:loc>
       <image:title>Wardogs cheats Open Graph</image:title>
-      <image:caption>Google and social preview image for cheatsforwardogs.org homepage.</image:caption>
+      <image:caption>Google and social preview image for cheatforwardogs.org homepage.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-1.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-1.webp</image:loc>
       <image:title>Wardogs cheats Hero</image:title>
       <image:caption>Buy Wardogs cheats - aimbot, ESP, and 2D radar artwork for PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/wardogs-cover.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/wardogs-cover.webp</image:loc>
       <image:title>Wardogs cheats Product Cover</image:title>
       <image:caption>WARDOGS cheats product cover for checkout and social previews.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/nav-logo.webp</image:loc>
-      <image:title>Wardogs cheats Navbar Mark</image:title>
-      <image:caption>Small navbar mark for cheatsforwardogs.org.</image:caption>
+      <image:loc>https://cheatforwardogs.org/videos/final.mp4</image:loc>
+      <image:title>Wardogs Cheats Hero Video</image:title>
+      <image:caption>WARDOGS gameplay hero loop for the homepage and forums.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-2.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-2.webp</image:loc>
       <image:title>Wardogs cheats Preview Thumbnail</image:title>
       <image:caption>Thumbnail for the WARDOGS aimbot and ESP preview video.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/wardogs-cheats.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/wardogs-cheats.jpg</image:loc>
       <image:title>Wardogs cheats Product Social Preview</image:title>
-      <image:caption>Default Open Graph image for cheatsforwardogs.org product pages.</image:caption>
+      <image:caption>Default Open Graph image for cheatforwardogs.org product pages.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-1.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 1</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-2.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 2</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-3.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 3</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-4.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 4</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-5.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 5</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-6.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 6</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-7.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 7</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-8.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 8</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-9.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 9</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-10.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 10</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-11.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 11</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-12.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 12</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-13.webp</image:loc>
+      <image:title>WARDOGS gameplay screenshot 13</image:title>
+      <image:caption>HD in-match ESP, radar, and aim overlay capture.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-cheats</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-cheats</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-cheats" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-cheats" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-cheats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-cheats" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-cheats.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-cheats.jpg</image:loc>
       <image:title>The Ultimate Guide to Wardogs Cheats Open Graph</image:title>
       <image:caption>Use this Wardogs cheats guide to compare ESP, aim, radar, and recoil options, build a clean setup, and make better choices in every PC match.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-1.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-1.webp</image:loc>
       <image:title>The Ultimate Guide to Wardogs Cheats Artwork</image:title>
       <image:caption>A practical WARDOGS guide covering awareness, aim configuration, radar, vehicle reads, PC compatibility, and update checks.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/wardogs-cheats</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/wardogs-cheats</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/wardogs-cheats" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/wardogs-cheats" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/wardogs-cheats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/wardogs-cheats" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/wardogs-cheats.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/wardogs-cheats.jpg</image:loc>
       <image:title>Wardogs cheats Open Graph</image:title>
       <image:caption>Google and social preview for the WARDOGS store page.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/wardogs-cover.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/wardogs-cover.webp</image:loc>
       <image:title>WARDOGS Aimbot ESP Product Artwork</image:title>
       <image:caption>Product features, compatibility, status and price before checkout.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/wardogs-cover-card.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/wardogs-cover-card.webp</image:loc>
       <image:title>WARDOGS Store Card</image:title>
       <image:caption>Display-sized product cover for the WARDOGS store card.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-1.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-1.webp</image:loc>
       <image:title>WARDOGS Product Hero</image:title>
       <image:caption>Hero artwork for WARDOGS ESP, aimbot, and radar product details.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-2.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-2.webp</image:loc>
       <image:title>WARDOGS Menu Preview</image:title>
       <image:caption>Menu and aimbot settings preview for WARDOGS.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-2.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-2.webp</image:loc>
       <image:title>WARDOGS ESP Gameplay</image:title>
       <image:caption>Player ESP preview for WARDOGS.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/wardogs-poster.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-1.webp</image:loc>
+      <image:title>WARDOGS preview 1</image:title>
+      <image:caption>Store preview still 1 for WARDOGS.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-2.webp</image:loc>
+      <image:title>WARDOGS preview 2</image:title>
+      <image:caption>Store preview still 2 for WARDOGS.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-3.webp</image:loc>
+      <image:title>WARDOGS preview 3</image:title>
+      <image:caption>Store preview still 3 for WARDOGS.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-4.webp</image:loc>
+      <image:title>WARDOGS preview 4</image:title>
+      <image:caption>Store preview still 4 for WARDOGS.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-5.webp</image:loc>
+      <image:title>WARDOGS preview 5</image:title>
+      <image:caption>Store preview still 5 for WARDOGS.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/image-6.webp</image:loc>
+      <image:title>WARDOGS preview 6</image:title>
+      <image:caption>Store preview still 6 for WARDOGS.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cheatforwardogs.org/media/wardogs-poster.jpg</image:loc>
       <image:title>Wardogs cheats Preview Poster</image:title>
       <image:caption>Poster frame for the WARDOGS aimbot and ESP preview video.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-2.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-2.webp</image:loc>
       <image:title>Wardogs cheats Preview Thumbnail</image:title>
       <image:caption>Thumbnail for the WARDOGS preview video.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/forums</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums.jpg</image:loc>
       <image:title>Wardogs cheats Forums Open Graph</image:title>
       <image:caption>Google preview image for the Wardogs cheats guides index.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-2.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-2.webp</image:loc>
       <image:title>Wardogs cheats Forum Artwork</image:title>
       <image:caption>Artwork reference for WARDOGS setup and feature guides.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-2d-radar</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-2d-radar</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-2d-radar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-2d-radar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-2d-radar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-2d-radar" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-2d-radar.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-2d-radar.jpg</image:loc>
       <image:title>Achieve Total Tactical Awareness with a 2D Radar Map Open Graph</image:title>
       <image:caption>Learn how a WARDOGS 2D radar map uses player markers, vehicle markers, and radar range for clear tactical awareness.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-1.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-4.webp</image:loc>
       <image:title>Achieve Total Tactical Awareness with a 2D Radar Map Artwork</image:title>
       <image:caption>Use a WARDOGS 2D radar map, player markers, vehicle markers, and range controls to read nearby movement without filling the world view.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-aimbot</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-aimbot</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-aimbot" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-aimbot" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-aimbot" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-aimbot" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-aimbot.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-aimbot.jpg</image:loc>
       <image:title>Never Miss a Shot Using the Wardogs Aimbot Open Graph</image:title>
       <image:caption>Set Enable Aimbot and FOV for WARDOGS on Windows PC. Learn a clean test order so target selection stays near your crosshair.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-2.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-8.webp</image:loc>
       <image:title>Never Miss a Shot Using the Wardogs Aimbot Artwork</image:title>
       <image:caption>How Enable Aimbot and FOV work together on WARDOGS, and how to test them without fighting radar and recoil at the same time.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-anti-cheat</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-anti-cheat</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-anti-cheat" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-anti-cheat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-anti-cheat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-anti-cheat" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-anti-cheat.jpg</image:loc>
-      <image:title>How Elytra Works as the Wardogs Anti Cheat Open Graph</image:title>
-      <image:caption>Learn how the Wardogs anti cheat Elytra works on Windows PC, how status labels change after patches, and when to wait before loading.</image:caption>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-anti-cheat.jpg</image:loc>
+      <image:title>Is WARDOGS Using Easy Anti-Cheat? EAC and Cheat Status Open Graph</image:title>
+      <image:caption>Learn how WARDOGS uses Easy Anti-Cheat on Windows PC, how cheat status labels change after patches, and when to wait before loading.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-3.webp</image:loc>
-      <image:title>How Elytra Works as the Wardogs Anti Cheat Artwork</image:title>
-      <image:caption>Learn how the Wardogs anti cheat Elytra works on Windows PC, how Clear and Updating labels change after patches, and when to wait before loading.</image:caption>
+      <image:loc>https://cheatforwardogs.org/media/image-3.webp</image:loc>
+      <image:title>Is WARDOGS Using Easy Anti-Cheat? EAC and Cheat Status Artwork</image:title>
+      <image:caption>Learn how Easy Anti-Cheat (EAC) works on WARDOGS for Windows PC, how Clear and Updating labels change after patches, and when to wait before loading.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-cheats-review</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-cheats-review</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-cheats-review" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-cheats-review" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-cheats-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-cheats-review" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-cheats-review.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-cheats-review.jpg</image:loc>
       <image:title>Best Wardogs Cheats Review &amp; Comparison 2026: Features, Safety &amp; Value Open Graph</image:title>
-      <image:caption>Compare Wardogs cheats by features, Elytra status, PC compatibility, support, pricing, and overall value in this practical 2026 review.</image:caption>
+      <image:caption>Compare Wardogs cheats by features, cheat status, PC compatibility, support, pricing, and overall value in this practical 2026 review.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-2.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-5.webp</image:loc>
       <image:title>Best Wardogs Cheats Review &amp; Comparison 2026: Features, Safety &amp; Value Artwork</image:title>
       <image:caption>A 2026 comparison of visual, aim, radar, compatibility, support, and license factors for WARDOGS PC tools.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-dma</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-dma</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-dma" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-dma" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-dma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-dma" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-dma.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-dma.jpg</image:loc>
       <image:title>How Wardogs Cloud DMA Works With Security Checks Open Graph</image:title>
       <image:caption>Learn how Wardogs DMA uses cloud processing instead of a second PC, including hardware, latency, connectivity, compatibility, and detection limits.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-2.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-2.webp</image:loc>
       <image:title>How Wardogs Cloud DMA Works With Security Checks Artwork</image:title>
       <image:caption>Learn how WARDOGS cloud DMA combines local memory-access hardware with remote processing, plus the latency, compatibility, and detection limits that matter.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-esp</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-esp</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-esp" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-esp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-esp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-esp" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-esp.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-esp.jpg</image:loc>
       <image:title>See Every Threat First with Wardogs ESP Open Graph</image:title>
       <image:caption>Use Wardogs ESP to track players and vehicles with box, skeleton, health, distance, weapon, and vehicle overlays on Windows PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-1.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-7.webp</image:loc>
       <image:title>See Every Threat First with Wardogs ESP Artwork</image:title>
       <image:caption>How box, skeleton, health, distance, weapon, and vehicle ESP help you read a WARDOGS control zone without filling the screen.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-hwid-spoofer</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-hwid-spoofer</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-hwid-spoofer" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-hwid-spoofer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-hwid-spoofer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-hwid-spoofer" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-hwid-spoofer.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-hwid-spoofer.jpg</image:loc>
       <image:title>Discover What an HWID Spoofer Does for Safety Open Graph</image:title>
       <image:caption>Learn what an HWID spoofer changes on Windows, how identifiers reset, and how it relates to WARDOGS compatibility checks.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-3.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-6.webp</image:loc>
       <image:title>Discover What an HWID Spoofer Does for Safety Artwork</image:title>
       <image:caption>A plain-language guide to hardware identifiers, temporary spoofing, compatibility, and reset behavior on Windows PC.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/forums/wardogs-no-recoil</loc>
+    <loc>https://cheatforwardogs.org/forums/wardogs-no-recoil</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/forums/wardogs-no-recoil" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/forums/wardogs-no-recoil" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/forums/wardogs-no-recoil" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/forums/wardogs-no-recoil" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/forums-wardogs-no-recoil.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/forums-wardogs-no-recoil.jpg</image:loc>
       <image:title>Achieve Perfect Recoil Control Without the Effort Open Graph</image:title>
       <image:caption>Use no recoil and no spread on WARDOGS to flatten climb and tighten grouping. Test one weapon at a time before changing aimbot FOV.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/media/image-3.webp</image:loc>
+      <image:loc>https://cheatforwardogs.org/media/image-9.webp</image:loc>
       <image:title>Achieve Perfect Recoil Control Without the Effort Artwork</image:title>
       <image:caption>How no recoil and no spread change WARDOGS weapon behavior, and how to test them one rifle at a time.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/reviews</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/reviews</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/reviews" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/reviews" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/reviews" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/reviews" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/reviews.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/reviews.jpg</image:loc>
       <image:title>Wardogs cheats Reviews Open Graph</image:title>
       <image:caption>Google preview image for WARDOGS cheats reviews.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/faq</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/faq</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/faq" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/faq.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/faq.jpg</image:loc>
       <image:title>Wardogs cheats FAQ Open Graph</image:title>
       <image:caption>Google preview image for the Wardogs cheats FAQ.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/support</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/support</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/support" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/support" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/support" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/support.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/support.jpg</image:loc>
       <image:title>Wardogs cheats Support Open Graph</image:title>
       <image:caption>Google preview image for Wardogs cheats support.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/privacy</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/privacy</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/privacy" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/privacy.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/privacy.jpg</image:loc>
       <image:title>Wardogs cheats Privacy Policy</image:title>
-      <image:caption>Privacy policy preview for cheatsforwardogs.org orders and support.</image:caption>
+      <image:caption>Privacy policy preview for cheatforwardogs.org orders and support.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/refunds</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/refunds</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.45</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/refunds" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/refunds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/refunds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/refunds" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/refunds.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/refunds.jpg</image:loc>
       <image:title>Wardogs cheats Refund Policy</image:title>
       <image:caption>Refund rules preview for digital Wardogs cheats licenses.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://cheatsforwardogs.org/terms</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://cheatforwardogs.org/terms</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cheatsforwardogs.org/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatsforwardogs.org/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cheatforwardogs.org/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cheatforwardogs.org/terms" />
     <image:image>
-      <image:loc>https://cheatsforwardogs.org/og/terms.jpg</image:loc>
+      <image:loc>https://cheatforwardogs.org/og/terms.jpg</image:loc>
       <image:title>Wardogs cheats Terms of Use</image:title>
       <image:caption>License terms preview for Wardogs cheats.</image:caption>
     </image:image>

@@ -12,7 +12,7 @@ all below info is given to you to retarget this template for Wardogs:
 
 Brand name: Wardogs cheats
 Short name: none
-Site URL (no trailing slash): cheatsforwardogs.org
+Site URL (no trailing slash): cheatforwardogs.org
 Checkout URL: https://zadeyo.com/go/ZAHRAN?to=%2Fproducts%2Fwardogs
 Game name:  wardogs
 Anti-cheat:  Elytra

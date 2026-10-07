@@ -1,4 +1,4 @@
-# Wardogs cheats (cheatsforwardogs.org)
+# Wardogs cheats (cheatforwardogs.org)
 
 Single-product static Astro site for **WARDOGS** on Windows PC — aimbot, ESP, 2D radar, no recoil, and no spread — Cloudflare Workers ready.
 
@@ -16,7 +16,7 @@ npx wrangler deploy
 | Item | Value |
 | --- | --- |
 | Game | WARDOGS |
-| Site | https://cheatsforwardogs.org |
+| Site | https://cheatforwardogs.org |
 | Product | /wardogs-cheats |
 | Plans | Monthly $35 (P30D), Lifetime $150 (P99Y) |
 | Support | Discord, Get Support on /support |
@@ -35,4 +35,4 @@ Forum slugs follow WARDOGS keywords (max four words):
 - `wardogs-aimbot`
 - `wardogs-no-recoil`
 
-`robots.txt` and `sitemap.xml` use `https://cheatsforwardogs.org` only.
+`robots.txt` and `sitemap.xml` use `https://cheatforwardogs.org` only.
