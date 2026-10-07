@@ -38,7 +38,7 @@ export const REVIEWS: Review[] = [
     game: 'WARDOGS',
     rating: 4,
     datePublished: '2026-09-13',
-    body: 'No fake multi-game catalog. Player markers plus honest Updating versus clear labels is what I wanted before buying Wardogs Cheats.',
+    body: 'No fake multi-game catalog. Player markers plus honest Updating versus clear labels is what I wanted before buying WARDOGS Cheats.',
   },
   {
     id: '4',

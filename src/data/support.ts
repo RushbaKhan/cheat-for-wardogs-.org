@@ -11,7 +11,7 @@ export type SupportFaq = {
 }
 
 export const SUPPORT_INTRO =
-  'Support for Wardogs Cheats buyers on cheatforwardogs.org — loader setup, cheat status, menu config, and delivery help after you purchase.'
+  'Support for WARDOGS Cheats buyers on cheatforwardogs.org — loader setup, cheat status, menu config, and delivery help after you purchase.'
 
 export const SUPPORT_TOPICS: SupportTopic[] = [
   {

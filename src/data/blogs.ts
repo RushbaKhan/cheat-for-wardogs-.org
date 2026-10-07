@@ -45,12 +45,12 @@ export type BlogPost = {
 export const BLOGS: BlogPost[] = [
   {
     slug: 'wardogs-cheats',
-    title: 'The Ultimate Guide to Wardogs Cheats',
+    title: 'The Ultimate Guide to WARDOGS Cheats',
     excerpt:
       'A practical WARDOGS guide covering awareness, aim configuration, radar, vehicle reads, PC compatibility, and update checks.',
-    metaTitle: 'Ultimate Guide to Wardogs Cheats',
+    metaTitle: 'Ultimate Guide to WARDOGS Cheats',
     metaDescription:
-      'Use this Wardogs cheats guide to compare ESP, aim, radar, and recoil options, build a clean setup, and make better choices in every PC match.',
+      'Use this WARDOGS cheats guide to compare ESP, aim, radar, and recoil options, build a clean setup, and make better choices in every PC match.',
     searchTerms:
       'wardogs cheats wardogs cheat wardogs esp wardogs aimbot radar no recoil pc guide',
     date: '2026-09-29',
@@ -59,7 +59,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'How Wardogs tools fit a control-zone match',
+        heading: 'How WARDOGS tools fit a control-zone match',
         body: [
           '<a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> can combine visual information, aim controls, radar, and weapon settings in one Windows PC menu. The useful part is not turning on every option. It is choosing a small set that supports how you fight, rotate, and hold the zone.',
           'WARDOGS is a 100-player tactical all-out warfare FPS from BULKHEAD, published by Team17. Official pages describe three teams fighting over a randomized control zone on a large, destructible battlefield with vehicles and combined-arms play.',
@@ -116,7 +116,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Use a clean pre-match checklist',
         body: [
-          'Confirm the current game build, Windows support, and product status before loading. WARDOGS uses Easy Anti-Cheat (EAC), and a <strong>Wardogs anti cheat</strong> patch can change compatibility even when the same setup worked in an earlier session.',
+          'Confirm the current game build, Windows support, and product status before loading. WARDOGS uses Easy Anti-Cheat (EAC), and a <strong>WARDOGS anti-cheat</strong> patch can change compatibility even when the same setup worked in an earlier session.',
           'Close overlays that you do not need, keep the official client current, and start with a minimal configuration. Add one visual group at a time after the menu and game are stable.',
           'For a focused look at player and vehicle markers, read the <a href="/forums/wardogs-2d-radar">WARDOGS 2D radar guide</a> next.',
         ],
@@ -191,12 +191,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'wardogs-dma',
-    title: 'How Wardogs Cloud DMA Works With Security Checks',
+    title: 'How WARDOGS Cloud DMA Works With Security Checks',
     excerpt:
       'Learn how WARDOGS cloud DMA combines local memory-access hardware with remote processing, plus the latency, compatibility, and detection limits that matter.',
-    metaTitle: 'How Wardogs Cloud DMA Works',
+    metaTitle: 'How WARDOGS Cloud DMA Works',
     metaDescription:
-      'Learn how Wardogs DMA uses cloud processing instead of a second PC, including hardware, latency, connectivity, compatibility, and detection limits.',
+      'Learn how WARDOGS DMA uses cloud processing instead of a second PC, including hardware, latency, connectivity, compatibility, and detection limits.',
     searchTerms:
       'wardogs dma cloud dma wardogs anti cheat remote processing firmware latency iommu eac',
     date: '2026-09-30',
@@ -204,9 +204,9 @@ export const BLOGS: BlogPost[] = [
     tag: 'Cloud DMA',
     sections: [
       {
-        heading: 'What Wardogs cloud DMA changes',
+        heading: 'What WARDOGS cloud DMA changes',
         body: [
-          '<strong>Wardogs DMA</strong> can use cloud processing to replace the second computer found in a traditional DMA setup. A local PCIe device still reads selected memory, but a remote service handles parsing and sends the resulting ESP or radar data to a supported display.',
+          '<strong>WARDOGS DMA</strong> can use cloud processing to replace the second computer found in a traditional DMA setup. A local PCIe device still reads selected memory, but a remote service handles parsing and sends the resulting ESP or radar data to a supported display.',
           'The word cloud describes where the processing happens. It does not mean the remote server can directly read a gaming PC without a local hardware or network path.',
           'This split can reduce local processing and equipment, but it does not make the setup invisible. WARDOGS security can still use client and server signals, hardware validation, input analysis, reports, and behavior over time.',
         ],
@@ -262,7 +262,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Why cloud DMA is not a detection guarantee',
         body: [
           'Cloud processing changes where parsing occurs, but the local DMA device and its firmware still exist. IOMMU controls, device identity, PCIe behavior, Windows security, and hardware validation can still affect compatibility.',
-          'The <a href="/forums/wardogs-anti-cheat">Wardogs anti cheat</a> layer can also use server data, input patterns, reports, and match behavior. Those checks do not depend on finding a traditional local overlay process.',
+          'The <a href="/forums/wardogs-anti-cheat">WARDOGS anti-cheat</a> layer can also use server data, input patterns, reports, and match behavior. Those checks do not depend on finding a traditional local overlay process.',
           '“Cloud connected,” “working,” and “not currently flagged” are different claims. Each one can change after a WARDOGS, Windows, BIOS, firmware, network, or security update.',
         ],
       },
@@ -309,7 +309,7 @@ export const BLOGS: BlogPost[] = [
         a: 'DMA means direct memory access. In a cloud DMA setup, local hardware reads selected memory while remote servers handle processing that a second PC would traditionally perform.',
       },
       {
-        q: 'Does Wardogs cloud DMA work without local hardware?',
+        q: 'Does WARDOGS cloud DMA work without local hardware?',
         a: 'Not in the common PCIe cloud DMA architecture described here. The cloud replaces the second processing PC, while a local DMA device still provides the memory-access path. Product requirements should state any different design clearly.',
       },
       {
@@ -343,7 +343,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'What anti-cheat WARDOGS uses',
         body: [
-          'The <strong>Wardogs anti cheat</strong> on the current Windows PC client is Easy Anti-Cheat (EAC). It sits with the game process and can also use server-side match data, so a local menu change does not cover every check.',
+          'The <strong>WARDOGS anti-cheat</strong> on the current Windows PC client is Easy Anti-Cheat (EAC). It sits with the game process and can also use server-side match data, so a local menu change does not cover every check.',
           'Publisher documentation describes enforcement against ESP, aimbots, triggerbots, and radar-style tools. On this site, live cheat status is the label that matters before you load. If the store shows Updating, wait. Load only when status is clear.',
           'That is a technical status, not a promise about future patches. Client updates, map changes, and security stack changes can all move a build from clear back to Updating.',
         ],
@@ -382,7 +382,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'How DMA and HWID relate to EAC',
         body: [
-          'EAC is the client security layer. <a href="/forums/wardogs-dma">Wardogs cloud DMA</a> combines a local hardware data path with remote processing. They are not the same product claim.',
+          'EAC is the client security layer. <a href="/forums/wardogs-dma">WARDOGS cloud DMA</a> combines a local hardware data path with remote processing. They are not the same product claim.',
           'An <a href="/forums/wardogs-hwid-spoofer">HWID spoofer</a> changes or masks selected identifiers. It does not turn EAC off and it does not replace a clear status label.',
           'Use the DMA and HWID threads when you need those technical details. Use this thread when you need to know whether EAC is currently clear to load.',
         ],
@@ -426,7 +426,7 @@ export const BLOGS: BlogPost[] = [
     faqs: [
       {
         q: 'What anti cheat does WARDOGS use?',
-        a: 'The current Windows PC client uses Easy Anti-Cheat (EAC). That is the Wardogs anti cheat this site reports as a live Clear or Updating label. Earlier Steam pages also mentioned Easy Anti-Cheat, but the label to watch before loading is EAC.',
+        a: 'The current Windows PC client uses Easy Anti-Cheat (EAC). That is the WARDOGS anti-cheat this site reports as a live Clear or Updating label. Earlier Steam pages also mentioned Easy Anti-Cheat, but the label to watch before loading is EAC.',
       },
       {
         q: 'What does Updating mean?',
@@ -437,7 +437,7 @@ export const BLOGS: BlogPost[] = [
         a: 'No. Clear is a point-in-time test against the live client. The next patch can move status back to Updating until the menu is tested again.',
       },
       {
-        q: 'Is DMA the same as the Wardogs anti cheat?',
+        q: 'Is DMA the same as the WARDOGS anti-cheat?',
         a: 'No. EAC is the client security layer. Cloud DMA combines a local hardware memory path with remote processing. Read the DMA guide for that setup, and use this thread for cheat status.',
       },
       {
@@ -473,7 +473,7 @@ export const BLOGS: BlogPost[] = [
         body: [
           'Player markers show position relative to your own location. Watch the direction and spacing between markers instead of chasing every dot across the panel.',
           'A cluster moving toward the control zone may signal a coordinated push. A single marker on a side road can indicate a flank, but it may not matter if it stays outside your current route.',
-          'Use the <a href="/forums/wardogs-esp">Wardogs ESP guide</a> when you need health, distance, weapon, or stance details in the world view. Radar answers where movement is happening; ESP adds detail about what is there.',
+          'Use the <a href="/forums/wardogs-esp">WARDOGS ESP guide</a> when you need health, distance, weapon, or stance details in the world view. Radar answers where movement is happening; ESP adds detail about what is there.',
         ],
       },
       {
@@ -496,7 +496,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Build a clean tactical awareness setup',
         body: [
           'Start with player markers and a short range. Add vehicle markers next, then test whether the extra symbols improve route choices or only add clutter.',
-          'Keep aimbot independent from radar. The <a href="/forums/wardogs-aimbot">Wardogs aimbot guide</a> covers FOV and target selection, while radar remains an awareness tool.',
+          'Keep aimbot independent from radar. The <a href="/forums/wardogs-aimbot">WARDOGS aimbot guide</a> covers FOV and target selection, while radar remains an awareness tool.',
           'For the current feature list, plans, and compatibility label, review <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> before changing your match setup.',
         ],
       },
@@ -554,12 +554,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'wardogs-cheats-review',
-    title: 'Best Wardogs Cheats Review & Comparison 2026: Features, Safety & Value',
+    title: 'Best WARDOGS Cheats Review & Comparison 2026: Features, Safety & Value',
     excerpt:
       'A 2026 comparison of visual, aim, radar, compatibility, support, and license factors for WARDOGS PC tools.',
-    metaTitle: 'Best Wardogs Cheats Review 2026',
+    metaTitle: 'Best WARDOGS Cheats Review 2026',
     metaDescription:
-      'Compare Wardogs cheats by features, cheat status, PC compatibility, support, pricing, and overall value in this practical 2026 review.',
+      'Compare WARDOGS cheats by features, cheat status, PC compatibility, support, pricing, and overall value in this practical 2026 review.',
     searchTerms:
       'wardogs cheats review comparison 2026 eac esp aimbot radar value',
     date: '2026-09-30',
@@ -569,7 +569,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'How to compare WARDOGS tools in 2026',
         body: [
-          'This <strong>Wardogs cheats review</strong> compares feature depth, configuration options, update reporting, support, and license value in 2026. The strongest package is not the one with the longest list. It is the one that explains each control and reports compatibility clearly.',
+          'This <strong>WARDOGS cheats review</strong> compares feature depth, configuration options, update reporting, support, and license value in 2026. The strongest package is not the one with the longest list. It is the one that explains each control and reports compatibility clearly.',
           'WARDOGS launched into Steam Early Access on September 10, 2026 as a 100-player, three-team warfare FPS. Its mix of infantry, vehicles, and randomized control zones means one fixed configuration will not suit every role or spawn.',
           'Because the game and its security systems are still changing, every feature and status claim is a point-in-time report. Compare what is available now instead of relying on permanent safety language.',
         ],
@@ -586,9 +586,9 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Compatibility and status reporting',
         body: [
-          'Read the <a href="/forums/wardogs-anti-cheat">Wardogs anti cheat</a> guide for cheat Clear versus Updating labels. A game patch can change compatibility, so a shop should show Updating instead of claiming every build is always ready.',
+          'Read the <a href="/forums/wardogs-anti-cheat">WARDOGS anti-cheat</a> guide for cheat Clear versus Updating labels. A game patch can change compatibility, so a shop should show Updating instead of claiming every build is always ready.',
           'Windows PC support should be explicit. Console and Linux are different platforms and should not be implied by a Windows loader.',
-          'Hardware routes need separate documentation. The <a href="/forums/wardogs-dma">Wardogs cloud DMA guide</a> explains how local hardware and remote processing change the setup without creating a permanent detection guarantee.',
+          'Hardware routes need separate documentation. The <a href="/forums/wardogs-dma">WARDOGS cloud DMA guide</a> explains how local hardware and remote processing change the setup without creating a permanent detection guarantee.',
         ],
       },
       {
@@ -698,7 +698,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'How spoofing relates to WARDOGS security',
         body: [
-          'An identifier change does not disable or replace the <a href="/forums/wardogs-anti-cheat">Wardogs anti cheat</a>. The <a href="/forums/wardogs-dma">DMA security guide</a> explains why client checks, server analysis, input patterns, reports, and hardware validation can still matter after an update.',
+          'An identifier change does not disable or replace the <a href="/forums/wardogs-anti-cheat">WARDOGS anti-cheat</a>. The <a href="/forums/wardogs-dma">DMA security guide</a> explains why client checks, server analysis, input patterns, reports, and hardware validation can still matter after an update.',
           'It also does not modify ESP, radar, aimbot, recoil, or spread settings. Those are feature controls, while spoofing deals with selected machine identifiers.',
           'Treat every compatibility label as current status rather than a permanent safety promise. For the current public feature list and license options, review <a href="https://cheatforwardogs.org/wardogs-cheats">Wardogs cheats</a> after checking the live product status.',
         ],
@@ -706,7 +706,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'HWID spoofing is not DMA',
         body: [
-          'An HWID spoofer changes or masks identifiers. <a href="/forums/wardogs-dma">Wardogs cloud DMA</a> combines a local hardware memory path with remote processing and display work.',
+          'An HWID spoofer changes or masks identifiers. <a href="/forums/wardogs-dma">WARDOGS cloud DMA</a> combines a local hardware memory path with remote processing and display work.',
           'The two systems solve different technical problems and should not be grouped into one feature claim. A DMA board can still expose hardware characteristics, while an identifier tool does not create a DMA data path.',
           'Before choosing either approach, compare the required hardware, Windows support, reset process, update policy, and support channel. Clear version details are more useful than a broad claim that a setup is always safe.',
         ],
@@ -765,12 +765,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'wardogs-esp',
-    title: 'See Every Threat First with Wardogs ESP',
+    title: 'See Every Threat First with WARDOGS ESP',
     excerpt:
       'How box, skeleton, health, distance, weapon, and vehicle ESP help you read a WARDOGS control zone without filling the screen.',
-    metaTitle: 'See Every Threat with Wardogs ESP',
+    metaTitle: 'See Every Threat with WARDOGS ESP',
     metaDescription:
-      'Use Wardogs ESP to track players and vehicles with box, skeleton, health, distance, weapon, and vehicle overlays on Windows PC.',
+      'Use WARDOGS ESP to track players and vehicles with box, skeleton, health, distance, weapon, and vehicle overlays on Windows PC.',
     searchTerms:
       'wardogs esp box esp skeleton health distance weapon vehicle overlay',
     date: '2026-09-30',
@@ -778,9 +778,9 @@ export const BLOGS: BlogPost[] = [
     tag: 'ESP',
     sections: [
       {
-        heading: 'What Wardogs ESP is for',
+        heading: 'What WARDOGS ESP is for',
         body: [
-          '<strong>Wardogs ESP</strong> is a set of visual overlays for WARDOGS on Windows PC. It is built to show players and vehicles that would otherwise be hidden by terrain, buildings, or smoke.',
+          '<strong>WARDOGS ESP</strong> is a set of visual overlays for WARDOGS on Windows PC. It is built to show players and vehicles that would otherwise be hidden by terrain, buildings, or smoke.',
           'WARDOGS control zones sit inside larger maps. Infantry can hold a compound while armor approaches from a road you are not facing. ESP is there to make that information visible, not to replace the 2D radar.',
         ],
       },
@@ -875,10 +875,10 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'wardogs-aimbot',
-    title: 'Never Miss a Shot Using the Wardogs Aimbot',
+    title: 'Never Miss a Shot Using the WARDOGS Aimbot',
     excerpt:
       'How Enable Aimbot and FOV work together on WARDOGS, and how to test them without fighting radar and recoil at the same time.',
-    metaTitle: 'Never Miss Using Wardogs Aimbot',
+    metaTitle: 'Never Miss Using WARDOGS Aimbot',
     metaDescription:
       'Set Enable Aimbot and FOV for WARDOGS on Windows PC. Learn a clean test order so target selection stays near your crosshair.',
     searchTerms:
@@ -888,9 +888,9 @@ export const BLOGS: BlogPost[] = [
     tag: 'Aimbot',
     sections: [
       {
-        heading: 'What the Wardogs aimbot controls',
+        heading: 'What the WARDOGS aimbot controls',
         body: [
-          'The <strong>Wardogs aimbot</strong> is an optional lock for WARDOGS on Windows PC. Enable Aimbot turns the assist on. FOV limits how far from the crosshair a target can be selected.',
+          'The <strong>WARDOGS aimbot</strong> is an optional lock for WARDOGS on Windows PC. Enable Aimbot turns the assist on. FOV limits how far from the crosshair a target can be selected.',
           'Leave it off if you only want ESP and radar. Many players run visuals first, then add aimbot for close infantry holds.',
         ],
       },
@@ -1030,7 +1030,7 @@ export const BLOGS: BlogPost[] = [
         heading: 'Build a repeatable recoil test',
         body: [
           'Use the same weapon, distance, stance, sight, and magazine size for each comparison. Fire at one fixed point and change only one setting between tests.',
-          'Add the <a href="/forums/wardogs-aimbot">Wardogs aimbot</a> only after recoil and spread feel consistent. If the screen is busy, use basic <a href="/forums/wardogs-esp">distance ESP</a> to keep each test at the same range.',
+          'Add the <a href="/forums/wardogs-aimbot">WARDOGS aimbot</a> only after recoil and spread feel consistent. If the screen is busy, use basic <a href="/forums/wardogs-esp">distance ESP</a> to keep each test at the same range.',
           'A repeatable test is more useful than chasing a perfect setting during a live fight. Keep separate profiles when infantry rifles, support weapons, and vehicle guns respond differently.',
         ],
       },

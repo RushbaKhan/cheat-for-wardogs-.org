@@ -67,13 +67,13 @@ export function HomePage() {
                   className="text-[1.75rem] font-semibold leading-[1.12] tracking-tight sm:text-4xl lg:text-[2.65rem] lg:leading-[1.1]"
                 />
                 <p className="mt-3 max-w-md text-sm leading-relaxed text-white/70 sm:mt-3.5 sm:text-[0.95rem]">
-                  Wardogs Cheats for Windows PC — aimbot, ESP, and 2D/3D radar, with live cheat
+                  WARDOGS Cheats for Windows PC — aimbot, ESP, and 2D/3D radar, with live cheat
                   status after EAC updates.
                 </p>
 
                 <div className="relative z-50 mt-5 flex flex-col gap-2.5 sm:flex-row sm:items-center">
                   <CheckoutLink className="cta-gradient inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90">
-                    Buy Wardogs Cheats
+                    Buy WARDOGS Cheats
                   </CheckoutLink>
                   <a
                     href={guidePath(GAME_SLUG)}

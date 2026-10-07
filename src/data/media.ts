@@ -112,8 +112,8 @@ export const HOME_GAMEPLAY_SCREENSHOTS: HomeGameplayScreenshot[] = HOME_GALLERY_
 export const PAGE_MEDIA = {
   home: {
     image: IMAGE_1,
-    alt: 'Wardogs cheats ESP and aimbot artwork for WARDOGS on PC',
-    title: 'Wardogs cheats for WARDOGS',
+    alt: 'WARDOGS cheats ESP and aimbot artwork for WARDOGS on PC',
+    title: 'WARDOGS cheats for WARDOGS',
     caption: 'Feature overview for aimbot, ESP, 2D radar, no recoil, and no spread.',
   },
   homeWhyFeatures: {
@@ -130,27 +130,27 @@ export const PAGE_MEDIA = {
   },
   forums: {
     image: IMAGE_1,
-    alt: 'Wardogs cheats product artwork',
-    title: 'Wardogs Intel',
+    alt: 'WARDOGS cheats product artwork',
+    title: 'WARDOGS Intel',
     caption: 'Reference for setup, aimbot, ESP, radar, and cheat status articles.',
   },
   reviews: {
     image: IMAGE_2,
-    alt: 'Wardogs cheats ESP review artwork',
-    title: 'Wardogs cheats Reviews',
-    caption: 'Feature and compatibility feedback for Wardogs cheats.',
+    alt: 'WARDOGS cheats ESP review artwork',
+    title: 'WARDOGS cheats Reviews',
+    caption: 'Feature and compatibility feedback for WARDOGS cheats.',
   },
   faq: {
     image: IMAGE_2,
-    alt: 'Wardogs cheats menu artwork for the FAQ',
-    title: 'Wardogs FAQ',
+    alt: 'WARDOGS cheats menu artwork for the FAQ',
+    title: 'WARDOGS FAQ',
     caption: 'Compatibility, status, and setup answers for WARDOGS.',
   },
   support: {
     image: IMAGE_1,
-    alt: 'Wardogs cheats support artwork',
-    title: 'Wardogs Support',
-    caption: 'Delivery, loader, and Discord support for Wardogs cheats.',
+    alt: 'WARDOGS cheats support artwork',
+    title: 'WARDOGS Support',
+    caption: 'Delivery, loader, and Discord support for WARDOGS cheats.',
   },
 } as const satisfies Record<string, SeoMediaItem>
 

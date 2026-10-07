@@ -71,7 +71,7 @@ export function siteIdentityGraph() {
       inLanguage: 'en',
       about: {
         '@type': 'Thing',
-        name: 'Wardogs cheats',
+        name: 'WARDOGS cheats',
         description:
           'Commercial WARDOGS cheats for PC � aimbot, silent aim, triggerbot, ESP, item ESP, and 2D/3D radar with live cheat status.',
       },
@@ -178,7 +178,7 @@ export function productReviewsJsonLd() {
       author: { '@type': 'Person', name: review.author },
       datePublished: review.datePublished,
       reviewBody: review.body,
-      name: `${review.author} Wardogs cheats review`,
+      name: `${review.author} WARDOGS cheats review`,
       reviewRating: {
         '@type': 'Rating',
         ratingValue: String(review.rating),

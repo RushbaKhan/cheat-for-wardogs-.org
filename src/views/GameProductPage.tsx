@@ -222,7 +222,7 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                       <figure key={src} className="page-card overflow-hidden rounded-2xl">
                         <img
                           src={src}
-                          alt={`Wardogs cheats in-game preview ${i + 1}`}
+                          alt={`WARDOGS cheats in-game preview ${i + 1}`}
                           title={`WARDOGS preview ${i + 1}`}
                           width={1024}
                           height={576}

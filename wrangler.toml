@@ -1,6 +1,6 @@
 # Cloudflare Workers + static assets — required so CI `npx wrangler deploy` succeeds.
 # (Dashboard is locked to that command; `wrangler pages deploy` is not used.)
-name = "buywardogscheats"
+name = "cheat-for-wardogs--org"
 main = "workers/site.js"
 compatibility_date = "2026-09-12"
 

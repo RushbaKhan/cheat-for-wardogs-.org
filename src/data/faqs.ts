@@ -6,8 +6,8 @@ export type FaqItem = {
 /** Master FAQ � visible on /faq and reused in sections. */
 export const SITE_FAQS: FaqItem[] = [
   {
-    q: 'What are Wardogs Cheats?',
-    a: 'Wardogs Cheats is a Windows PC menu for WARDOGS on cheatforwardogs.org. It includes aimbot, aim assist, silent aim, triggerbot, player ESP (box, skeleton, health, name, distance, class), team check, item and pickup ESP, and 2D/3D radar, plus live cheat status after game and EAC updates.',
+    q: 'What are WARDOGS Cheats?',
+    a: 'WARDOGS Cheats is a Windows PC menu for WARDOGS on cheatforwardogs.org. It includes aimbot, aim assist, silent aim, triggerbot, player ESP (box, skeleton, health, name, distance, class), team check, item and pickup ESP, and 2D/3D radar, plus live cheat status after game and EAC updates.',
   },
   {
     q: 'How much do WARDOGS cheats cost?',
@@ -15,7 +15,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'Do you sell cheats for other games?',
-    a: 'No. cheatforwardogs.org sells Wardogs Cheats only � one product, for WARDOGS on Windows PC.',
+    a: 'No. cheatforwardogs.org sells WARDOGS Cheats only � one product, for WARDOGS on Windows PC.',
   },
   {
     q: 'Is aimbot required?',
@@ -39,10 +39,10 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'Does this work on WARDOGS for Windows?',
-    a: 'Yes. Wardogs Cheats is built for WARDOGS on Windows PC. It is not a console or Linux build. Steam Early Access is Windows-first, with console versions planned later by the publisher.',
+    a: 'Yes. WARDOGS Cheats is built for WARDOGS on Windows PC. It is not a console or Linux build. Steam Early Access is Windows-first, with console versions planned later by the publisher.',
   },
   {
-    q: 'How do I buy Wardogs Cheats?',
+    q: 'How do I buy WARDOGS Cheats?',
     a: 'Start on the homepage, confirm cheat status is clear, and review monthly at $35 or lifetime at $150. Open the store page for the feature list, then continue to checkout for digital delivery.',
   },
   {
@@ -50,7 +50,7 @@ export const SITE_FAQS: FaqItem[] = [
     a: 'After checkout, follow the WARDOGS setup guide for the current load order. If status is Updating, wait rather than forcing an outdated build.',
   },
   {
-    q: 'Where is support for Wardogs Cheats?',
+    q: 'Where is support for WARDOGS Cheats?',
     a: 'Open the Support page and use Get Support. Discord is for orders, loader help, menu settings, and cheat status questions. Include your order ID. It is not the official WARDOGS community server.',
   },
   {
@@ -63,7 +63,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'Is this the official WARDOGS site?',
-    a: 'No. We sell Wardogs Cheats only. Buy and play the game from the official WARDOGS site or Steam. We are not affiliated with BULKHEAD or Team17.',
+    a: 'No. We sell WARDOGS Cheats only. Buy and play the game from the official WARDOGS site or Steam. We are not affiliated with BULKHEAD or Team17.',
   },
 ]
 

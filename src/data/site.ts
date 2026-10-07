@@ -2,8 +2,12 @@ import { PRODUCT_OG } from './images'
 import { PAGE_OG } from './og'
 
 export const SITE_URL = 'https://cheatforwardogs.org'
-export const SITE_NAME = 'Wardogs Cheats'
-export const SITE_SHORT_NAME = 'Wardogs Cheats'
+export const SITE_NAME = 'WARDOGS Cheats'
+export const SITE_SHORT_NAME = 'WARDOGS Cheats'
+
+/** Footer intro line (avoid repeating the brand before Ã¢ÂÂfor WARDOGSÃ¢ÂÂ). */
+export const SITE_FOOTER_BLURB =
+  'Cheats for WARDOGS on PC Ã¢ÂÂ aimbot, silent aim, ESP, 2D/3D radar, and live cheat status, worldwide.'
 export const SITE_HOST = 'cheatforwardogs.org'
 export const GAME_NAME = 'WARDOGS'
 export const GAME_SLUG = 'wardogs'
@@ -23,7 +27,7 @@ export const BRAND_APPLE_TOUCH_ICON = '/apple-touch-icon.png?v=6'
  * Canonical host is apex https://cheatforwardogs.org (www 301s to apex in the Worker).
  */
 export const SITE_PURPOSE =
-  'Buy Wardogs Cheats for WARDOGS on Windows PC - aimbot, aim assist, silent aim, triggerbot, player ESP, item ESP, and 2D/3D radar with live cheat status and instant digital delivery.'
+  'Buy WARDOGS Cheats for WARDOGS on Windows PC - aimbot, aim assist, silent aim, triggerbot, player ESP, item ESP, and 2D/3D radar with live cheat status and instant digital delivery.'
 
 export const SITE_ABOUT = [
   'wardogs cheats',
@@ -101,7 +105,7 @@ export const SEO = {
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'WARDOGS intel and setup guides for Wardogs Cheats',
+    imageAlt: 'WARDOGS intel and setup guides for WARDOGS Cheats',
     robots: INDEX_ROBOTS,
   },
   reviews: {
@@ -111,7 +115,7 @@ export const SEO = {
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
-    imageAlt: 'Buyer reviews for Wardogs Cheats',
+    imageAlt: 'Buyer reviews for WARDOGS Cheats',
     robots: INDEX_ROBOTS,
   },
   faq: {
@@ -131,7 +135,7 @@ export const SEO = {
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
-    imageAlt: 'Support for Wardogs Cheats buyers',
+    imageAlt: 'Support for WARDOGS Cheats buyers',
     robots: INDEX_ROBOTS,
   },
   product: {
@@ -171,7 +175,7 @@ export const SEO = {
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'Windows setup guides for Wardogs Cheats',
+    imageAlt: 'Windows setup guides for WARDOGS Cheats',
     robots: INDEX_ROBOTS,
   },
 } as const satisfies Record<string, PageSeo>

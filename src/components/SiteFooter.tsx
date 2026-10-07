@@ -3,7 +3,7 @@ import {
   SITE_GUIDE_LINKS,
   SITE_PAGE_LINKS,
 } from '../data/links'
-import { SITE_NAME, GAME_NAME } from '../data/site'
+import { SITE_FOOTER_BLURB, SITE_NAME, GAME_NAME } from '../data/site'
 
 type SiteFooterProps = {
   currentPath?: string
@@ -35,10 +35,7 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
         <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-12">
           <div className="max-w-sm shrink-0">
             <p className="font-semibold text-z-ink">{SITE_NAME}</p>
-            <p className="mt-3 text-sm leading-relaxed text-white/55">
-              {SITE_NAME} for WARDOGS on PC — aimbot, silent aim, ESP, 2D/3D radar, and live
-              cheat status, worldwide.
-            </p>
+            <p className="mt-3 text-sm leading-relaxed text-white/55">{SITE_FOOTER_BLURB}</p>
           </div>
 
           <nav
