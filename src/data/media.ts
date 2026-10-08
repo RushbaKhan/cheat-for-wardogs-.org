@@ -9,7 +9,7 @@ export type SeoMediaItem = {
 }
 
 /** Self-hosted hero loop (1080p H.264, ≤25 MiB for Workers). For 4K, use R2/Stream URL. */
-export const WARDOGS_HERO_VIDEO = '/videos/final.mp4'
+export const WARDOGS_HERO_VIDEO = '/videos/compressed.mp4'
 
 /** Still frame from the hero video (1920×1080 source). */
 export const WARDOGS_POSTER = '/media/wardogs-poster.jpg'

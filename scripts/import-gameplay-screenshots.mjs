@@ -2,7 +2,7 @@
  * Import gameplay stills into public/media/image-{n}.webp (full resolution, quality 92).
  * Sources (first match with readable JPGs):
  *   1. public/media/_import/*.jpg  (manual drop from user)
- *   2. public/media/_frames/*.jpg  (ffmpeg extract from final.mp4)
+ *   2. public/media/_frames/*.jpg  (ffmpeg extract from compressed.mp4)
  *   3. Cursor project assets/*.jpg (when files are fully materialized on disk)
  */
 import { readdirSync } from 'node:fs'

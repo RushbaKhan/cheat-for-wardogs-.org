@@ -164,11 +164,11 @@ for (const [name, html] of [
   ['home', home],
   ['forums', forums],
 ]) {
-  if (!html.includes('/videos/final.mp4')) {
+  if (!html.includes('/videos/compressed.mp4')) {
     fail(`${name}: missing hero video`)
   }
 }
-if (!product.includes('/videos/final.mp4')) {
+if (!product.includes('/videos/compressed.mp4')) {
   fail('product: missing hero preview video in page body')
 }
 if (!product.includes('/media/image-1.webp') || !product.includes('/media/image-2.webp')) {
@@ -341,7 +341,7 @@ for (const asset of [
   'public/media/wardogs-cover.webp',
   'public/media/wardogs-cover-card.webp',
   'public/media/wardogs-poster.jpg',
-  'public/videos/final.mp4',
+  'public/videos/compressed.mp4',
   'public/sitemap.css',
   'public/_routes.json',
   'functions/_middleware.js',
@@ -409,7 +409,7 @@ if (!headers.includes('application/xml; charset=utf-8') && !headers.includes('te
 }
 
 const workersAssetLimit = 25 * 1024 * 1024
-for (const rel of ['videos/final.mp4']) {
+for (const rel of ['videos/compressed.mp4']) {
   const assetPath = join(dist, rel)
   if (!existsSync(assetPath)) continue
   const bytes = statSync(assetPath).size

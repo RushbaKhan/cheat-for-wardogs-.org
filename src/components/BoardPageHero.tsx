@@ -8,7 +8,7 @@ type BoardPageHeroProps = {
   videoLabel?: string
 }
 
-/** Forums / products hero band with the same final.mp4 loop as the homepage. */
+/** Forums / products hero band with the same compressed.mp4 loop as the homepage. */
 export function BoardPageHero({
   eyebrow,
   title,

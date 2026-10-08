@@ -28,6 +28,7 @@ dist-ssr
 .tmp-chrome-debug/
 
 public/videos/final-source.mp4
+public/videos/compressed-source.mp4
 public/videos/final-*-test.mp4
 public/videos/_ffmpeg2pass*
 
