@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import { SupportPage } from '../views/SupportPage'
-import { SEO, SITE_URL } from '../data/site'
+import { SEO, SITE_URL, SUPPORT_DISCORD_URL } from '../data/site'
 import { PRODUCT_ID } from '../lib/seo'
 
 const jsonLdExtra = [
@@ -14,6 +14,12 @@ const jsonLdExtra = [
     about: { '@id': PRODUCT_ID },
     inLanguage: 'en',
     isPartOf: { '@id': `${SITE_URL}/#website` },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      url: SUPPORT_DISCORD_URL,
+      availableLanguage: ['en'],
+    },
   },
   {
     '@type': 'BreadcrumbList',

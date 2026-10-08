@@ -1,3 +1,5 @@
+import { SUPPORT_DISCORD_URL } from './site'
+
 export type FaqItem = {
   q: string
   a: string
@@ -51,7 +53,7 @@ export const SITE_FAQS: FaqItem[] = [
   },
   {
     q: 'Where is support for WARDOGS Cheats?',
-    a: 'Open the Support page and use Get Support. Discord is for orders, loader help, menu settings, and cheat status questions. Include your order ID. It is not the official WARDOGS community server.',
+    a: `Use Get Support on the Support page or join ${SUPPORT_DISCORD_URL}. Discord is for orders, loader help, menu settings, and cheat status questions. Include your order ID. It is not the official WARDOGS community server.`,
   },
   {
     q: 'Where can I read reviews?',

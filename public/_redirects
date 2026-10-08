@@ -31,8 +31,10 @@
 # Long-tail keyword aliases
 /wardogs-anti-cheat   /forums/wardogs-anti-cheat  301
 /wardogs-anti-cheat/  /forums/wardogs-anti-cheat  301
-/wardogs-discord                             /support  301
-/wardogs-discord/                            /support  301
+/wardogs-discord                             https://discord.com/invite/BX5rs748K  301
+/wardogs-discord/                            https://discord.com/invite/BX5rs748K  301
+/discord                                     https://discord.com/invite/BX5rs748K  301
+/discord/                                    https://discord.com/invite/BX5rs748K  301
 /wardogs-pc                                  /wardogs-cheats  301
 /wardogs-pc/                                 /wardogs-cheats  301
 

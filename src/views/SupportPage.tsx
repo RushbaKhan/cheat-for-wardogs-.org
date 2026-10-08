@@ -2,7 +2,13 @@ import { ChevronDown } from 'lucide-react'
 import { Navbar } from '../components/Navbar'
 import { SiteFooter } from '../components/SiteFooter'
 import { CheckoutLink } from '../components/CheckoutLink'
-import { PRODUCT_PATH, SEO, SITE_NAME, SUPPORT_DISCORD_URL } from '../data/site'
+import {
+  PRODUCT_PATH,
+  SEO,
+  SITE_NAME,
+  SUPPORT_DISCORD_CODE,
+  SUPPORT_DISCORD_URL,
+} from '../data/site'
 import { SUPPORT_FAQS, SUPPORT_INTRO, SUPPORT_TOPICS } from '../data/support'
 import { blogPath } from '../data/blogs'
 
@@ -31,7 +37,18 @@ export function SupportPage() {
             >
               Get Support
             </a>
-            <p className="mt-3 text-sm text-white/45">
+            <p className="mt-3 text-sm text-white/50">
+              Official buyer Discord:{' '}
+              <a
+                href={SUPPORT_DISCORD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-z-soft underline-offset-2 hover:text-white hover:underline"
+              >
+                discord.gg/{SUPPORT_DISCORD_CODE}
+              </a>
+            </p>
+            <p className="mt-2 text-sm text-white/45">
               Setup guides live in the{' '}
               <a
                 href="/forums"

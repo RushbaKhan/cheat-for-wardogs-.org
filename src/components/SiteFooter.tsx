@@ -3,7 +3,13 @@ import {
   SITE_GUIDE_LINKS,
   SITE_PAGE_LINKS,
 } from '../data/links'
-import { SITE_FOOTER_BLURB, SITE_NAME, GAME_NAME } from '../data/site'
+import {
+  GAME_NAME,
+  SITE_FOOTER_BLURB,
+  SITE_NAME,
+  SUPPORT_DISCORD_CODE,
+  SUPPORT_DISCORD_URL,
+} from '../data/site'
 
 type SiteFooterProps = {
   currentPath?: string
@@ -47,6 +53,16 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
                 Pages
               </p>
               <ul className="mt-3 space-y-2 text-sm text-white/65">
+                <li>
+                  <a
+                    href={SUPPORT_DISCORD_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-colors hover:text-white"
+                  >
+                    Discord support ({SUPPORT_DISCORD_CODE})
+                  </a>
+                </li>
                 {SITE_PAGE_LINKS.filter(
                   (l) => !['/privacy', '/terms', '/refunds'].includes(l.to),
                 ).map((l) => (

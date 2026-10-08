@@ -408,6 +408,20 @@ if (!headers.includes('application/xml; charset=utf-8') && !headers.includes('te
   fail('_headers missing XML charset Content-Type')
 }
 
+const BUYER_DISCORD_INVITE = 'BX5rs748K'
+const REMOVED_DISCORD_INVITE = 't6n2cUNkPT'
+
+for (const file of files) {
+  const html = readFileSync(file, 'utf8')
+  if (html.includes(REMOVED_DISCORD_INVITE)) {
+    fail(`${relative(dist, file)}: still references removed Discord invite ${REMOVED_DISCORD_INVITE}`)
+  }
+}
+
+if (!support.includes(BUYER_DISCORD_INVITE) || !faq.includes(BUYER_DISCORD_INVITE)) {
+  fail('support and faq must link to buyer Discord invite BX5rs748K')
+}
+
 const workersAssetLimit = 25 * 1024 * 1024
 for (const rel of ['videos/compressed.mp4']) {
   const assetPath = join(dist, rel)
