@@ -8,7 +8,7 @@ export type SeoMediaItem = {
   videoDescription?: string
 }
 
-/** Self-hosted hero background loop for home, forums, and store card. */
+/** Self-hosted hero loop (1080p H.264, ≤25 MiB for Workers). For 4K, use R2/Stream URL. */
 export const WARDOGS_HERO_VIDEO = '/videos/final.mp4'
 
 /** Still frame from the hero video (1920×1080 source). */

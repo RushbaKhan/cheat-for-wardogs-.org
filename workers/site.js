@@ -53,7 +53,12 @@ function isXmlCrawler(request) {
 }
 
 async function serveSitemap(env, request) {
-  const asset = await assetsFetch(env, request, '/sitemap.xml')
+  const asset = await env.ASSETS.fetch(
+    new Request(new URL('/sitemap.xml', 'https://assets.local'), {
+      method: 'GET',
+      headers: request.headers,
+    }),
+  )
   let body = await asset.text()
   if (!asset.ok || !body.includes('<urlset')) {
     return new Response('Sitemap unavailable', { status: 500, headers: { 'content-type': 'text/plain; charset=utf-8' } })
