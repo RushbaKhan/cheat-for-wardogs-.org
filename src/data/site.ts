@@ -13,7 +13,7 @@ export const GAME_NAME = 'WARDOGS'
 export const GAME_SLUG = 'wardogs'
 export const ANTI_CHEAT = 'Easy Anti-Cheat (EAC)'
 export const PRODUCT_PATH = '/wardogs-cheats'
-export const SUPPORT_DISCORD_URL = 'https://discord.gg/t6n2cUNkPT'
+export const SUPPORT_DISCORD_URL = 'https://discord.gg/BX5rs748K'
 /** Full-resolution mark for schema. */
 export const BRAND_LOGO = '/favicon.png'
 /** Tab icons generated from public/favicon.png at build time. */
